@@ -267,17 +267,17 @@
                 android:background="@color/white">
 
                 <TextView
+                    android:id="@+id/tvCardCVV"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
 
+                    android:layout_gravity="center"
                     android:gravity="center"
                     android:text="CVV"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
 
 
-                    />
+                    android:textSize="15sp" />
 
             </LinearLayout>
 

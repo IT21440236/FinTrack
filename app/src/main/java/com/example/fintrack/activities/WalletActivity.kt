@@ -16,6 +16,8 @@ class WalletActivity : AppCompatActivity() {
     private lateinit var clAddCard: ConstraintLayout
     private lateinit var imgVCard: ImageView
     private lateinit var tvAddCard: TextView
+    private lateinit var clChooseCard: ConstraintLayout
+    private lateinit var imgVVisa: ImageView
 
 
 
@@ -26,6 +28,9 @@ class WalletActivity : AppCompatActivity() {
         clAddCard = findViewById(R.id.clAddCard)
         imgVCard = findViewById(R.id.imgVCard)
         tvAddCard = findViewById(R.id.tvAddCard)
+        clChooseCard = findViewById(R.id.clChooseCard)
+        imgVVisa = findViewById(R.id.imgVVisa)
+
 
         val firebase: DatabaseReference = FirebaseDatabase.getInstance().getReference()
 
@@ -39,6 +44,14 @@ class WalletActivity : AppCompatActivity() {
         }
         tvAddCard.setOnClickListener {
             val intent = Intent(this, AddCardActivity::class.java)
+            startActivity(intent)
+        }
+        clChooseCard.setOnClickListener {
+            val intent = Intent(this, FetchingCardActivity::class.java)
+            startActivity(intent)
+        }
+        imgVVisa.setOnClickListener {
+            val intent = Intent(this, FetchingCardActivity::class.java)
             startActivity(intent)
         }
     }//end of onCreate

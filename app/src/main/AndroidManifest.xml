@@ -12,10 +12,10 @@
         android:theme="@style/Theme.FinTrack"
         tools:targetApi="31">
         <activity
-            android:name=".CardDetailsActivity"
+            android:name=".activities.CardDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".FetchingCardActivity"
+            android:name=".activities.FetchingCardActivity"
             android:exported="false" />
         <activity
             android:name=".activities.CalculatorActivity"

@@ -138,13 +138,13 @@
         android:layout_marginBottom="8dp"
         android:background="@drawable/spinnerbackground"
         android:entries="@array/month"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintBottom_toTopOf="@+id/imgVVisa"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.119"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imgVVisa"
         android:layout_width="391dp"
         android:layout_height="128dp"
         android:layout_marginBottom="92dp"

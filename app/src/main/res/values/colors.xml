@@ -14,5 +14,17 @@
     <color name="centerColor">#2A2A72</color>
     <color name="endColor">#2A2A72</color>
     <color name="offwhite">#FAFAFA</color>
+    <color name="light_blue">#009FFD</color>
+    <color name="dark_blue">#2A2A72</color>
+    <color name="low_white">#f1f1f3</color>
+
+    <color name="colorPrimary">#738DEF</color>
+    <color name="colorPrimaryDark">#6285FF</color>
+    <color name="colorAccent">#738DEF</color>
+
+    <color name="colorblack">#24272E</color>
+    <color name="colorGray">#7C7C80</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorPurple">#738DEF</color>
 
 </resources>

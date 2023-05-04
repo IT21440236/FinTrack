@@ -12,34 +12,51 @@
         android:theme="@style/Theme.FinTrack"
         tools:targetApi="31">
         <activity
-            android:name=".activities.MainActivityPg8"
+            android:name=".CardDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.MainActivityPg3"
+            android:name=".FetchingCardActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.MainActivityIndex"
+            android:name=".activities.CalculatorActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.MainActivityPg7"
+            android:name=".activities.AddCardActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.MainActivityPg5Family"
-            android:exported="false" />
+            android:name=".activities.CardActivity"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".activities.MainActivityPg6" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activities.MainActivityPg8" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activities.MainActivityPg3" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activities.MainActivityIndex" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activities.MainActivityPg7" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activities.MainActivityPg5Family" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activities.MainActivityPg2Family" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activities.MainActivityPg5" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activities.MainActivityPg2" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activities.MainActivityPg4" -->
+        <!-- android:exported="false" /> -->
         <activity
-            android:name=".activities.MainActivityPg2Family"
-            android:exported="false" />
-        <activity
-            android:name=".activities.MainActivityPg5"
-            android:exported="false" />
-        <activity
-            android:name=".activities.MainActivityPg2"
-            android:exported="false" />
-        <activity
-            android:name=".activities.MainActivityPg4"
-            android:exported="false" />
-        <activity
-            android:name=".activities.MainActivityPg6"
+            android:name=".activities.WalletActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

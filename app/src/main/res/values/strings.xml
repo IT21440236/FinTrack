@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">FinTrackP</string>
+
+    <string name="lb_goals">Goals</string>
+    <string name="lb_addgoals">Add Goals</string>
+    <string name="lb_avb_balance">Goals</string>
+    <string name="lb_balance_amt">Rs 188,000</string>
+    <string name="lb_savings_for">Savings for</string>
+    <string name="lb_travel">Travel</string>
+    <string name="lb_shopping">Shopping</string>
+    <string name="lb_education">Education</string>
+    <string name="lb_users">Users</string>
+    <string name="lb_payment">Payment</string>
+    <string name="lb_amount">Amount</string>
+    <string name="btn_add">Add</string>
+    <string name="lb_goal_name">Financial Goal</string>
+    <string name="et_hint_goal">eg - Travel</string>
+    <string name="et_amount">"eg - 25000.00 "</string>
+    <string name="lb_amount_goal">35,000</string>
+    <string name="lb_account_balance">Account Balance</string>
+    <string name="lb_saving_amount">Saving Amount</string>
+    <string name="lb_remain_amount">Remain Amount</string>
+    <string name="search_goals">Search Goals</string>
+
+    <string-array name="payment_for">
+        <item>Monthly</item>
+        <item>Yearly</item>
+    </string-array>
+
+    <string name="btn_update">Update</string>
+    <string name="btn_delete">Delete</string>
+
+    <string name="lb_header_user">User</string>
+    <string name="lb_username">Nikolas Perera</string>
+    <string name="lb_user_email">nikolas@gmail.com</string>
+    <string name="btn_edit">Edit</string>
+    <string name="lb_analytics">Analytics</string>
+    <string name="lb_feedback">Feedback</string>
+    <string name="lb_contactus">Contact Us</string>
+    <string name="lb_user_phoneno">077 345 6677</string>
+    <string name="lb_nicno">19812050143v</string>
+    <string name="lb_logout">Log Out</string>
+
+    <string name="lb_header2_feedback">Send us your feedback</string>
+    <string name="lb_experience">How was your experience ?</string>
+    <string name="btn_send">Send</string>
+    <string name="copyright">2023 All Rights Reserved</string>
+
+    <string name="lb_message">Message</string>
+    <string name="btn_submit">Submit</string>
+    <string name="lb_company_address">No 11, Temple Road, Colombo 5</string>
+    <string name="lb_company_mobile">+94 11-245-653</string>
+    <string name="lb_company_email">info@FinTrack.com</string>
+
+    <string name="lb_edit_profile">Edit Profile</string>
+    <string name="lb_name">Name</string>
+    <string name="lb_email">Email</string>
+    <string name="lb_tel">Tel</string>
+    <string name="lb_nic">NIC</string>
+
+    <string name="lb_choose_user">Choose User</string>
+    <string name="lb_adult">Adult</string>
+    <string name="lb_kid">Kid</string>
+    <string name="lb_fintrack_footer">FinTrack</string>
+    <string name="lb_copyrights">2023 All Rights Reserved</string>
+    <string name="lb_welcome">Welcome</string>
+    <string name="lb_back">Back</string>
+    <string name="lb_login">Login To Account</string>
+    <string name="lb_hint_email">Email</string>
+    <string name="lb_hint_password"> Password </string>
+    <string name="lb_forgort_pass"><u>forgot password?</u></string>
+    <string name="btn_sign_in">Sign In</string>
+    <string name="lb_register"><u>Are you a new user? Register</u></string>
+    <string name="lb_newpassword">New Password</string>
+    <string name="lb_hint_confirmpassword">Confirm Password</string>
+    <string name="btn_confirm">Confirm</string>
+    <string name="lb_haveaccount"><u>Have an account? Sign in</u></string>
+    <string name="lb_create_account">Create Account</string>
+    <string name="btn_register">Register</string>
+    <string name="lb_hint_username">Username</string>
+    <string name="lb_hint_nic">NIC</string>
+    <string name="lb_hint_telephone">Tel</string>
+    <string name="lb_hint_workplace">Work Place</string>
+</resources>

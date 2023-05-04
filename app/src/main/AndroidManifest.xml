@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FinTrack"
+        tools:targetApi="31">
+        <activity
+            android:name=".activities.MainActivityPg8"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MainActivityPg3"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MainActivityIndex"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MainActivityPg7"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MainActivityPg5Family"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MainActivityPg2Family"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MainActivityPg5"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MainActivityPg2"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MainActivityPg4"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MainActivityPg6"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

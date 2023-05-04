@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_blue"
+    tools:context=".activities.MainActivityPg5">
+
+    <ImageView
+        android:id="@+id/ImgVDarkCirclePg5"
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        android:layout_marginEnd="252dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/lbHeaderPg5"
+        app:layout_constraintEnd_toStartOf="@+id/IBBellPg5"
+        app:srcCompat="@drawable/circle_dark" />
+
+    <ImageView
+        android:id="@+id/ImgVLightCirclePg5"
+        android:layout_width="188dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="292dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ImgVBackgrdShapePg5"
+        app:srcCompat="@drawable/circle_light" />
+
+    <ImageButton
+        android:id="@+id/IBBackArrowPg5"
+        android:layout_width="30dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="60dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/ImgVDarkCirclePg5"
+        app:layout_constraintEnd_toEndOf="@+id/ImgVDarkCirclePg5"
+        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+    <ImageButton
+        android:id="@+id/IBBellPg5"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_notifications_24" />
+
+    <ImageView
+        android:id="@+id/ImgVBackgrdShapePg5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="184dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/form_background_shape" />
+
+    <TextView
+        android:id="@+id/lbHeaderPg5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:fontFamily="@font/segoe_ui"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/lbCreateAccountPg5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lbCreateAccountPg5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:fontFamily="@font/segoe_ui"
+        android:text="@string/lb_create_account"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ImgVBackgrdShapePg5" />
+
+    <EditText
+        android:id="@+id/etUserNamePg5"
+        android:layout_width="312dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="18dp"
+        android:drawableLeft="@drawable/baseline_perm_identity_24"
+        android:drawablePadding="1dp"
+        android:ems="10"
+        android:fontFamily="@font/segoe_ui"
+        android:hint="@string/lb_hint_username"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbCreateAccountPg5" />
+
+    <EditText
+        android:id="@+id/etEmailPg5"
+        android:layout_width="312dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/segoe_ui"
+        android:hint="@string/lb_hint_email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUserNamePg5" />
+
+    <EditText
+        android:id="@+id/etPasswordPg5"
+        android:layout_width="312dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/baseline_security_24"
+        android:drawablePadding="1dp"
+        android:ems="10"
+        android:fontFamily="@font/segoe_ui"
+        android:hint="@string/lb_hint_password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEmailPg5" />
+
+    <EditText
+        android:id="@+id/etNICPg5"
+        android:layout_width="312dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/baseline_credit_card_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/segoe_ui"
+        android:hint="@string/lb_hint_nic"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/ImgVBackgrdShapePg5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPasswordPg5" />
+
+    <EditText
+        android:id="@+id/etTelPg5"
+        android:layout_width="312dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/baseline_phone_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/segoe_ui"
+        android:hint="@string/lb_hint_telephone"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNICPg5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRegister"
+        android:layout_width="275dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_backgrd"
+        android:fontFamily="@font/segoe_ui_bold"
+        android:text="@string/btn_register"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTelPg5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

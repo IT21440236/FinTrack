@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+
+        android:startColor = "@color/startColor"
+        android:centerColor = "@color/centerColor"
+        android:endColor = "@color/centerColor"
+        android:angle = "18"
+        android:type = "linear" />
+    <corners android:radius="0dp"/>
+    <!--
+    <stroke android:color="@color/blue" android:width="1dp"/>
+    Sometimes you want an outline around your shape
+    and to do that
+    you can use the stroke tag.
+    You can specify the width and color of the
+    outline using android:width and android:color.
+    -->
+</shape>

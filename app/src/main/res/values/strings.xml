@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">FinTrack</string>
+    <string name="lb_choose_user">Choose User</string>
+    <string name="lb_adult">Adult</string>
+    <string name="lb_kid">Kid</string>
+    <string name="lb_fintrack_footer">FinTrack</string>
+    <string name="lb_copyrights">2023 All Rights Reserved</string>
+    <string name="lb_welcome">Welcome</string>
+    <string name="lb_back">Back</string>
+    <string name="lb_login">Login To Account</string>
+    <string name="lb_hint_email">Email</string>
+    <string name="lb_hint_password"> Password </string>
+    <string name="lb_forgort_pass"><u>forgot password?</u></string>
+    <string name="btn_sign_in">Sign In</string>
+    <string name="lb_register"><u>Are you a new user? Register</u></string>
+    <string name="lb_newpassword">New Password</string>
+    <string name="lb_hint_confirmpassword">Confirm Password</string>
+    <string name="btn_confirm">Confirm</string>
+    <string name="lb_haveaccount"><u>Have an account? Sign in</u></string>
+    <string name="lb_create_account">Create Account</string>
+    <string name="btn_register">Register</string>
+    <string name="lb_hint_username">Username</string>
+    <string name="lb_hint_nic">NIC</string>
+    <string name="lb_hint_telephone">Tel</string>
+    <string name="lb_hint_workplace">Work Place</string>
+    <string name="lb_budget">Budget</string>
+    <string name="lb_hint_ramount">Rs.22,000</string>
+    <string name="lb_left">left</string>
+    <string name="lb_outof">Out of</string>
+    <string name="lb_hint_tamount">Rs.50,000</string>
+    <string name="btn_budget">+ New budget</string>
+    <string name="lb_individual">Individual</string>
+    <string name="lb_family">Family</string>
+    <string name="lb_setup">Setup</string>
+    <string name="lb_calculator">Calculator</string>
+    <string name="lb_analytics">Analytics</string>
+    <string name="lb_income">Income</string>
+    <string name="lb_expenditure">Expenditure</string>
+    <string name="lb_subscriptions">Subcriptions</string>
+    <string name="lb_availbalance">Available Balance</string>
+    <string name="lb_hint_amount">Rs.70,230</string>
+    <string name="lb_report">Report</string>
+    <string name="lb_transaction">Transaction</string>
+    <string name="lb_graph">GRAPH</string>
+    <string name="lb_goal">Goal</string>
+
+    <string-array name="month">
+        <item>January 2023</item>
+        <item>February 2023</item>
+        <item>March 2023</item>
+        <item>April 2023</item>
+        <item>May 2023</item>
+        <item>June 2023</item>
+        <item>July 2023</item>
+        <item>August 2023</item>
+        <item>September 2023</item>
+        <item>November 2023</item>
+        <item>December 2023</item>
+    </string-array>
+
+</resources>
+

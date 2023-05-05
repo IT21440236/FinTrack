@@ -1,7 +1,9 @@
 package com.example.fintrack.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fintrack.adapters.AdapterTransactionClass
@@ -9,6 +11,8 @@ import com.example.fintrack.R
 import com.example.fintrack.models.Transaction
 
 class MainActivityPg7 : AppCompatActivity() {
+
+    private lateinit var btnBackAP: ImageView
     private lateinit var recyclerView: RecyclerView
     private lateinit var transList: ArrayList<Transaction>
     lateinit var imageList:Array<Int>
@@ -19,6 +23,13 @@ class MainActivityPg7 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pg7)
+
+        btnBackAP = findViewById(R.id.btnBackAP)
+
+        btnBackAP.setOnClickListener {
+            val intent = Intent(this,WalletActivity::class.java)
+            startActivity(intent)
+        }
 
 
         imageList = arrayOf(

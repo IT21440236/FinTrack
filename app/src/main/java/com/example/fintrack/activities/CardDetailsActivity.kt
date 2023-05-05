@@ -116,7 +116,7 @@ class CardDetailsActivity : AppCompatActivity() {
         etCardExpiryDate.setText(intent.getStringExtra("cardExpiryDate").toString())
         etCardCVV.setText(intent.getStringExtra("cardCVV").toString())
 
-        mDialog.setTitle("Updating $cardNo Record")
+        mDialog.setTitle("Updating $cardNo")
 
         val alertDialog = mDialog.create()
         alertDialog.show()

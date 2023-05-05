@@ -54,7 +54,7 @@
                 android:layout_weight="1"
                 android:textColor="@color/colorblack"
                 android:stateListAnimator="@null"
-                android:background="@color/colorWhite"/>
+                android:background=""/>
 
             <Button
                 android:id="@+id/btnLeftB"
@@ -65,7 +65,7 @@
                 android:layout_weight="1"
                 android:textColor="@color/colorGray"
                 android:stateListAnimator="@null"
-                android:background="@color/colorWhite"/>
+                android:background=""/>
 
             <Button
                 android:id="@+id/btnRightB"
@@ -76,7 +76,7 @@
                 android:layout_weight="1"
                 android:textColor="@color/colorGray"
                 android:stateListAnimator="@null"
-                android:background="@color/colorWhite"/>
+                android:background=""/>
             <Button
                 android:id="@+id/btnDivide"
                 android:layout_width="match_parent"
@@ -86,7 +86,7 @@
                 android:layout_weight="1"
                 android:textColor="@color/colorPurple"
                 android:stateListAnimator="@null"
-                android:background="@color/colorWhite"/>
+                android:background=""/>
 
         </LinearLayout>
         <LinearLayout
@@ -104,7 +104,7 @@
                 android:layout_weight="1"
                 android:textColor="@color/colorGray"
                 android:stateListAnimator="@null"
-                android:background="@color/colorWhite"/>
+                android:background=""/>
 
             <Button
                 android:id="@+id/btn2"
@@ -115,7 +115,7 @@
                 android:layout_weight="1"
                 android:textColor="@color/colorGray"
                 android:stateListAnimator="@null"
-                android:background="@color/colorWhite"/>
+                android:background=""/>
 
             <Button
                 android:id="@+id/btn3"
@@ -126,7 +126,7 @@
                 android:layout_weight="1"
                 android:textColor="@color/colorGray"
                 android:stateListAnimator="@null"
-                android:background="@color/colorWhite"/>
+                android:background=""/>
             <Button
                 android:id="@+id/btnMultiply"
                 android:layout_width="match_parent"
@@ -136,7 +136,7 @@
                 android:layout_weight="1"
                 android:textColor="@color/colorPurple"
                 android:stateListAnimator="@null"
-                android:background="@color/colorWhite"/>
+                android:background=""/>
 
         </LinearLayout>
         <LinearLayout
@@ -154,7 +154,7 @@
                 android:layout_weight="1"
                 android:textColor="@color/colorGray"
                 android:stateListAnimator="@null"
-                android:background="@color/colorWhite"/>
+                android:background=""/>
 
             <Button
                 android:id="@+id/btn5"
@@ -165,7 +165,7 @@
                 android:layout_weight="1"
                 android:textColor="@color/colorGray"
                 android:stateListAnimator="@null"
-                android:background="@color/colorWhite"/>
+                android:background=""/>
 
             <Button
                 android:id="@+id/btn6"
@@ -176,7 +176,7 @@
                 android:layout_weight="1"
                 android:textColor="@color/colorGray"
                 android:stateListAnimator="@null"
-                android:background="@color/colorWhite"/>
+                android:background=""/>
             <Button
                 android:id="@+id/btnMinus"
                 android:layout_width="match_parent"
@@ -186,7 +186,7 @@
                 android:layout_weight="1"
                 android:textColor="@color/colorPurple"
                 android:stateListAnimator="@null"
-                android:background="@color/colorWhite"/>
+                android:background=""/>
 
         </LinearLayout>
         <LinearLayout
@@ -204,7 +204,7 @@
                 android:layout_weight="1"
                 android:textColor="@color/colorGray"
                 android:stateListAnimator="@null"
-                android:background="@color/colorWhite"/>
+                android:background=""/>
 
             <Button
                 android:id="@+id/btn8"
@@ -215,7 +215,7 @@
                 android:layout_weight="1"
                 android:textColor="@color/colorGray"
                 android:stateListAnimator="@null"
-                android:background="@color/colorWhite"/>
+                android:background=""/>
 
             <Button
                 android:id="@+id/btn9"
@@ -226,7 +226,7 @@
                 android:layout_weight="1"
                 android:textColor="@color/colorGray"
                 android:stateListAnimator="@null"
-                android:background="@color/colorWhite"/>
+                android:background=""/>
             <Button
                 android:id="@+id/btnPlus"
                 android:layout_width="match_parent"
@@ -236,7 +236,7 @@
                 android:layout_weight="1"
                 android:textColor="@color/colorPurple"
                 android:stateListAnimator="@null"
-                android:background="@color/colorWhite"/>
+                android:background="e"/>
 
         </LinearLayout>
         <LinearLayout
@@ -253,7 +253,7 @@
                 android:layout_weight="1"
                 android:textColor="@color/colorGray"
                 android:stateListAnimator="@null"
-                android:background="@color/colorWhite"/>
+                android:background=""/>
 
             <Button
                 android:id="@+id/btn0"
@@ -264,7 +264,7 @@
                 android:layout_weight="1"
                 android:textColor="@color/colorGray"
                 android:stateListAnimator="@null"
-                android:background="@color/colorWhite"/>
+                android:background=""/>
 
             <Button
                 android:id="@+id/btnDot"
@@ -275,7 +275,7 @@
                 android:layout_weight="1"
                 android:textColor="@color/colorGray"
                 android:stateListAnimator="@null"
-                android:background="@color/colorWhite"/>
+                android:background=""/>
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -283,7 +283,7 @@
                 android:gravity="center"
                 android:layout_weight="1">
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btnEqual"
                     android:layout_width="78dp"
                     android:layout_height="78dp"

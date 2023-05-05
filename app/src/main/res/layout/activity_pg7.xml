@@ -160,7 +160,7 @@
 
     <ImageView
         android:id="@+id/ImgVSliderDarkPg7"
-        android:layout_width="174dp"
+        android:layout_width="184dp"
         android:layout_height="56dp"
         android:layout_marginStart="10dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -171,16 +171,16 @@
 
     <TextView
         android:id="@+id/lbTransactionsPg7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="101dp"
+        android:layout_height="25dp"
         android:layout_marginBottom="16dp"
         android:fontFamily="@font/segoe_ui"
-        android:text="@string/lb_transaction"
+        android:text="@string/lb_subscriptions"
         android:textColor="@color/startColor"
-        android:textSize="20sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/ImgVSliderDarkPg7"
         app:layout_constraintEnd_toEndOf="@+id/ImgVSliderLightPg7"
-        app:layout_constraintHorizontal_bias="0.794"
+        app:layout_constraintHorizontal_bias="0.851"
         app:layout_constraintStart_toEndOf="@+id/lbReportPg7" />
 
     <TextView

@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_btn_white"
     android:orientation="vertical"
     android:padding="10dp">
+
 
     <EditText
         android:id="@+id/etCardNo"
@@ -13,6 +16,9 @@
         android:fontFamily="@font/segoe_ui"
         android:hint="Card Number"
         android:inputType="textPersonName"
+        android:maxLength="@integer/cardno_maxlength"
+        android:textColor="@color/colorblack"
+        android:textColorHint="@color/colorblack"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -24,6 +30,8 @@
         android:ems="10"
         android:fontFamily="@font/segoe_ui"
         android:hint="Card Name"
+        android:textColor="@color/colorblack"
+        android:textColorHint="@color/colorblack"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -36,6 +44,8 @@
         android:fontFamily="@font/segoe_ui"
         android:hint="Expiry Date"
         android:inputType="textPersonName"
+        android:textColor="@color/colorblack"
+        android:textColorHint="@color/colorblack"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -47,6 +57,9 @@
         android:ems="10"
         android:fontFamily="@font/segoe_ui"
         android:hint="CVV"
+        android:maxLength="@integer/cvv_maxlength"
+        android:textColor="@color/colorblack"
+        android:textColorHint="@color/colorblack"
         android:textSize="20sp"
         android:textStyle="bold" />
 

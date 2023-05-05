@@ -19,6 +19,17 @@ class WalletActivity : AppCompatActivity() {
     private lateinit var clChooseCard: ConstraintLayout
     private lateinit var imgVVisa: ImageView
 
+    private lateinit var clTransaction: ConstraintLayout
+    private lateinit var imgVTransaction: ImageView
+    private lateinit var tvTransaction: TextView
+
+    private lateinit var clCalculator: ConstraintLayout
+    private lateinit var imgVCalculator: ImageView
+    private lateinit var tvCalculator: TextView
+
+
+
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,6 +41,16 @@ class WalletActivity : AppCompatActivity() {
         tvAddCard = findViewById(R.id.tvAddCard)
         clChooseCard = findViewById(R.id.clChooseCard)
         imgVVisa = findViewById(R.id.imgVVisa)
+
+        clTransaction = findViewById(R.id.clTransaction)
+        imgVTransaction = findViewById(R.id.imgVTransaction)
+        tvTransaction = findViewById(R.id.tvTransaction)
+
+        clCalculator = findViewById(R.id.clCalculator)
+        imgVCalculator = findViewById(R.id.imgVCalculator)
+        tvCalculator = findViewById(R.id.tvCalculator)
+
+
 
 
         val firebase: DatabaseReference = FirebaseDatabase.getInstance().getReference()
@@ -52,6 +73,32 @@ class WalletActivity : AppCompatActivity() {
         }
         imgVVisa.setOnClickListener {
             val intent = Intent(this, FetchingCardActivity::class.java)
+            startActivity(intent)
+        }
+
+        clTransaction.setOnClickListener {
+            val intent = Intent(this, MainActivityPg7::class.java)
+            startActivity(intent)
+        }
+        imgVTransaction.setOnClickListener {
+            val intent = Intent(this, MainActivityPg7::class.java)
+            startActivity(intent)
+        }
+        tvTransaction.setOnClickListener {
+            val intent = Intent(this, MainActivityPg7::class.java)
+            startActivity(intent)
+        }
+
+        clCalculator.setOnClickListener {
+            val intent = Intent(this, CalculatorActivity::class.java)
+            startActivity(intent)
+        }
+        imgVCalculator.setOnClickListener {
+            val intent = Intent(this, CalculatorActivity::class.java)
+            startActivity(intent)
+        }
+        tvCalculator.setOnClickListener {
+            val intent = Intent(this, CalculatorActivity::class.java)
             startActivity(intent)
         }
     }//end of onCreate

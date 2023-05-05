@@ -38,10 +38,10 @@
         <!-- <activity -->
         <!-- android:name=".activities.MainActivityIndex" -->
         <!-- android:exported="false" /> -->
-        <!-- <activity -->
-        <!-- android:name=".activities.MainActivityPg7" -->
-        <!-- android:exported="false" /> -->
-        <!-- <activity -->
+         <activity
+         android:name=".activities.MainActivityPg7"
+         android:exported="false" />
+<!--         <activity -->
         <!-- android:name=".activities.MainActivityPg5Family" -->
         <!-- android:exported="false" /> -->
         <!-- <activity -->

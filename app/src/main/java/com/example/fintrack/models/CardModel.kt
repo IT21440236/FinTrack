@@ -5,6 +5,6 @@ data class CardModel (
     var cardNo: String? = null,
     var cardName: String? = null,
     var cardExpiryDate: String? = null,
-    var cardCVV: String? = null
+    var cardCVV: String?= null
 )
 

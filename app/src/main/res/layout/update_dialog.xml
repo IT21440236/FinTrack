@@ -10,8 +10,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:fontFamily="@font/segoe_ui"
         android:hint="Card Number"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/etCardName"
@@ -19,7 +22,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:ems="10"
-        android:hint="Card Name" />
+        android:fontFamily="@font/segoe_ui"
+        android:hint="Card Name"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/etCardExpiryDate"
@@ -27,8 +33,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:ems="10"
+        android:fontFamily="@font/segoe_ui"
         android:hint="Expiry Date"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/etCardCVV"
@@ -36,15 +45,22 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:ems="10"
-        android:hint="CVV" />
+        android:fontFamily="@font/segoe_ui"
+        android:hint="CVV"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnUpdateData"
-        android:layout_width="wrap_content"
+        android:layout_width="163dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:text="Update Data" />
+        android:background="@drawable/btn_backgrd"
+        android:fontFamily="@font/segoe_ui"
+        android:text="Update Data"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
 
 
 </LinearLayout>

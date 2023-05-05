@@ -59,7 +59,7 @@ class FetchingCardActivity : AppCompatActivity() {
                             intent.putExtra("cardId", cardList[position].cardId)
                             intent.putExtra("cardNo", cardList[position].cardNo)
                             intent.putExtra("cardName", cardList[position].cardName)
-                            intent.putExtra("cardExpiryData", cardList[position].cardExpiryDate)
+                            intent.putExtra("cardExpiryDate", cardList[position].cardExpiryDate)
                             intent.putExtra("cardCVV", cardList[position].cardCVV)
                             startActivity(intent)
                         }

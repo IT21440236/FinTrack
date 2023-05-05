@@ -67,17 +67,20 @@ class AddCardActivity : AppCompatActivity() {
 
         if (cardNo.isEmpty()){
             etCardNo.error = "Please enter card number"
+            return
         }
         if (cardName.isEmpty()){
             etName.error = "Please enter card name"
+            return
         }
         if (cardExpiryDate.isEmpty()){
             etExpiryDate.error = "Please enter expiry date"
+            return
         }
         if (cardCVV.isEmpty()){
             etCVV.error = "Please enter cvv number"
+            return
         }
-
 
         val cardId = dbRef.push().key!!
 
@@ -95,7 +98,6 @@ class AddCardActivity : AppCompatActivity() {
                 Toast.makeText(this,"Error ${err.message}", Toast.LENGTH_LONG).show()
             }
     }
-
 
 
 }

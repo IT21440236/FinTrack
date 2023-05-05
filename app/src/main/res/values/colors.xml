@@ -26,5 +26,7 @@
     <color name="colorGray">#7C7C80</color>
     <color name="colorWhite">#ffffff</color>
     <color name="colorPurple">#738DEF</color>
+    <color name="redstart">#A71D31</color>
+    <color name="redend">#3F0D12</color>
 
 </resources>

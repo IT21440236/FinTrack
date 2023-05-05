@@ -23,9 +23,10 @@
         <activity
             android:name=".activities.AddCardActivity"
             android:exported="false" />
-        <activity
-            android:name=".activities.CardActivity"
-            android:exported="false" /> <!-- <activity -->
+<!--        <activity-->
+<!--            android:name=".activities.CardActivity"-->
+<!--            android:exported="false" />-->
+        <!-- <activity -->
         <!-- android:name=".activities.MainActivityPg6" -->
         <!-- android:exported="false" /> -->
         <!-- <activity -->

@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
@@ -23,11 +24,20 @@ class CardDetailsActivity : AppCompatActivity() {
     private lateinit var btnUpdate: Button
     private lateinit var btnDelete: Button
 
+    private lateinit var btnBackWT: ImageView
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_card_details)
+
+        btnBackWT = findViewById(R.id.btnBackWT)
+
+        btnBackWT.setOnClickListener {
+            val intent = Intent(this, FetchingCardActivity::class.java)
+            startActivity(intent)
+        }
 
         initView()
         setValuesToViews()
@@ -66,7 +76,7 @@ class CardDetailsActivity : AppCompatActivity() {
     }
 
     private fun initView(){
-        tvCardId = findViewById(R.id.tvCardId)
+//        tvCardId = findViewById(R.id.tvCardId)
         tvCardNo = findViewById(R.id.tvCardNo)
         tvCardName = findViewById(R.id.tvCardName)
         tvCardExpiryDate = findViewById(R.id.tvCardExpiryDate)
@@ -77,7 +87,7 @@ class CardDetailsActivity : AppCompatActivity() {
     }
 
     private fun setValuesToViews(){
-        tvCardId.text = intent.getStringExtra("cardId")
+//        tvCardId.text = intent.getStringExtra("cardId")
         tvCardNo.text = intent.getStringExtra("cardNo")
         tvCardName.text = intent.getStringExtra("cardName")
         tvCardExpiryDate.text = intent.getStringExtra("cardExpiryDate")
@@ -99,7 +109,7 @@ class CardDetailsActivity : AppCompatActivity() {
         val etCardName = mDialogView.findViewById<EditText>(R.id.etCardName)
         val etCardExpiryDate = mDialogView.findViewById<EditText>(R.id.etCardExpiryDate)
         val etCardCVV = mDialogView.findViewById<EditText>(R.id.etCardCVV)
-        val btnUpdateData = mDialogView.findViewById<EditText>(R.id.btnUpdateData)
+        val btnUpdateData = mDialogView.findViewById<Button>(R.id.btnUpdateData)
 
         etCardNo.setText(intent.getStringExtra("cardNo").toString())
         etCardName.setText(intent.getStringExtra("cardName").toString())

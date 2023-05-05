@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import com.example.fintrackp.R
 import com.example.fintrackp.models.GoalModel
 import com.google.firebase.auth.FirebaseAuth
@@ -43,14 +44,15 @@ class EditProfile : AppCompatActivity() {
 
         setValuesToViews()
 
-//        btnUpdate.setOnClickListener {
-//            updateProfile(
-//                etName.text.toString(),
-//                etEmail.text.toString(),
-//                etTel.text.toString(),
-//                etNIC.text.toString()
-//            )
-//        }
+        btnUpdate.setOnClickListener {
+            updateProfile(
+                etName.text.toString(),
+                etEmail.text.toString(),
+                etTel.text.toString(),
+                etNIC.text.toString()
+            )
+        }
+
 
     }
 
@@ -74,6 +76,30 @@ class EditProfile : AppCompatActivity() {
             }
 
         })
+    }
+
+    private fun updateProfile(
+        name:String,
+        email:String,
+        tel:String,
+        nic:String
+    ){
+        val user = firebaseAuth.currentUser
+        val userreference = databaseReference?.child(user?.uid!!)
+
+        val updateUser: MutableMap<String, Any> = HashMap()
+        updateUser["username"] = name
+        updateUser["useremail"] = email
+        updateUser["tel"] = tel
+        updateUser["nic"] = nic
+
+        userreference?.updateChildren(updateUser)?.addOnCompleteListener { task ->
+            if(task.isSuccessful){
+                Toast.makeText(this, "Data updated successfully", Toast.LENGTH_LONG).show()
+            }else{
+                Toast.makeText(this, "Error", Toast.LENGTH_LONG).show()
+            }
+        }
     }
 
 //    private fun updateProfile(

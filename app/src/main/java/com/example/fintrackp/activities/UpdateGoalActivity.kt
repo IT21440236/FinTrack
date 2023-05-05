@@ -111,7 +111,6 @@ class UpdateGoalActivity : AppCompatActivity() {
                 etAmountDGP.text.toString()
             )
 
-
             Toast.makeText(applicationContext, "Goal Data Updated", Toast.LENGTH_LONG).show()
 
             tvGoal.text = etFinancialGoalDGP.text.toString()

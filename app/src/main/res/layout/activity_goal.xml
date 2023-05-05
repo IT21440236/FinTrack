@@ -44,10 +44,12 @@
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="500dp"
+        android:layout_marginTop="60dp"
         android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
         <LinearLayout
             android:layout_width="320dp"
@@ -94,9 +96,9 @@
                 android:layout_height="30dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="8dp"
-                app:iconifiedByDefault="false"
                 android:background="@drawable/background_btn_white"
                 android:elevation="3dp"
+                app:iconifiedByDefault="false"
                 app:queryHint="@string/search_goals" />
 
 
@@ -189,84 +191,31 @@
         tools:ignore="MissingConstraints">
 
 
-        <TextView
-            android:id="@+id/lbAccountBalGP"
+        <EditText
+            android:id="@+id/etGoalAmount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
             android:layout_marginTop="16dp"
-            android:text="@string/lb_account_balance"
-            android:textColor="@color/light_blue"
-            android:textSize="18sp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="Enter Goal Amount"
+            android:inputType="textPersonName"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textView13"
+        <Button
+            android:id="@+id/btnCheck"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="44dp"
-            android:layout_marginTop="4dp"
-            android:text="Rs 188,000"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/lbAccountBalGP" />
-
-        <TextView
-            android:id="@+id/lbSavingAmountGP"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="32dp"
-            android:text="@string/lb_saving_amount"
-            android:textColor="@color/light_blue"
-            android:textSize="18dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.318"
-            app:layout_constraintStart_toEndOf="@+id/lbAccountBalGP"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView16"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="56dp"
-            android:text="Rs 105,000"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/lbSavingAmountGP" />
-
-        <TextView
-            android:id="@+id/lbRemainBalanceGP"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/lb_remain_amount"
-            android:textColor="@color/light_blue"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView13" />
-
-        <TextView
-            android:id="@+id/textView17"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="Rs 83,000"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:textStyle="bold"
+            android:background="@drawable/background_visa"
+            android:text="Button"
+            android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/lbRemainBalanceGP" />
+            app:layout_constraintTop_toBottomOf="@+id/etGoalAmount" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

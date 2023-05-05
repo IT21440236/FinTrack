@@ -15,6 +15,11 @@ class GoalAdapter(private var goalList:ArrayList<GoalModel>) : RecyclerView.Adap
         fun onItemClick(position: Int)
     }
 
+    fun setFilteredList(mList : ArrayList<GoalModel>){
+        this.goalList = mList
+        notifyDataSetChanged()
+    }
+
     fun setOnClickListner(clickListner: onItemClickListner){
         mListner = clickListner
     }

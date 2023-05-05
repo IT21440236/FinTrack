@@ -24,6 +24,7 @@ class WalletActivity : AppCompatActivity() {
     private lateinit var imgVTransaction: ImageView
     private lateinit var tvTransaction: TextView
 
+    //calculator
     private lateinit var clCalculator: ConstraintLayout
     private lateinit var imgVCalculator: ImageView
     private lateinit var tvCalculator: TextView

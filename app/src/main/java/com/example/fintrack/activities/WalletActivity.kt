@@ -18,6 +18,7 @@ class WalletActivity : AppCompatActivity() {
     private lateinit var tvAddCard: TextView
     private lateinit var clChooseCard: ConstraintLayout
     private lateinit var imgVVisa: ImageView
+    private lateinit var tvChooseCard: ImageView
 
     private lateinit var clTransaction: ConstraintLayout
     private lateinit var imgVTransaction: ImageView
@@ -41,6 +42,7 @@ class WalletActivity : AppCompatActivity() {
         tvAddCard = findViewById(R.id.tvAddCard)
         clChooseCard = findViewById(R.id.clChooseCard)
         imgVVisa = findViewById(R.id.imgVVisa)
+        tvChooseCard = findViewById(R.id.tvChooseCard)
 
         clTransaction = findViewById(R.id.clTransaction)
         imgVTransaction = findViewById(R.id.imgVTransaction)
@@ -72,6 +74,10 @@ class WalletActivity : AppCompatActivity() {
             startActivity(intent)
         }
         imgVVisa.setOnClickListener {
+            val intent = Intent(this, FetchingCardActivity::class.java)
+            startActivity(intent)
+        }
+        tvChooseCard.setOnClickListener {
             val intent = Intent(this, FetchingCardActivity::class.java)
             startActivity(intent)
         }

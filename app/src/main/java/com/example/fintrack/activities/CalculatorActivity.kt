@@ -8,8 +8,8 @@ import androidx.appcompat.app.AppCompatActivity
 import org.mariuszgromada.math.mxparser.Expression
 
 class CalculatorActivity : AppCompatActivity() {
-    private lateinit var tvInput: TextView
-    private lateinit var tvOutput: TextView
+    lateinit var tvInput: TextView
+    lateinit var tvOutput: TextView
     private lateinit var btnClear: Button
     private lateinit var btnLeftB: Button
     private lateinit var btnRightB: Button
@@ -93,7 +93,7 @@ class CalculatorActivity : AppCompatActivity() {
 
     //now create methods
 
-    private fun appendOnClick(clear: Boolean, string: String) {
+    fun appendOnClick(clear: Boolean, string: String) {
 
         if (clear) {
             tvOutput.text = ""
@@ -105,13 +105,13 @@ class CalculatorActivity : AppCompatActivity() {
         }
     }
 
-    private fun clear() {
+    fun clear() {
         tvInput.text = ""
         tvOutput.text = ""
 
     }
 
-    private fun calculate() {
+    fun calculate() {
         try {
             val input = Expression(tvInput.text.toString())
             val output = input.calculate()

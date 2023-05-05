@@ -48,6 +48,10 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
+    //newly added for calculator test
+    androidTestImplementation 'org.mockito:mockito-core:3.12.4'
+    androidTestImplementation 'org.mockito:mockito-android:3.12.4'
+
     // Import the Firebase BoM
     implementation platform('com.google.firebase:firebase-bom:32.0.0')
 
@@ -55,7 +59,15 @@ dependencies {
     // When using the BoM, you don't specify versions in Firebase library dependencies
     implementation 'com.google.firebase:firebase-database-ktx'
 
+    //For Calculator
     implementation 'org.mariuszgromada.math:MathParser.org-mXparser:4.4.0'
+
+    //For unit test cases
+    testImplementation 'org.robolectric:robolectric:4.6.1'
+    testImplementation 'androidx.test.ext:truth:1.4.0-alpha05'
+    testImplementation 'com.google.truth:truth:1.1.2'
+
+
 
 
 

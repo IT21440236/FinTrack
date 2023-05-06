@@ -27,6 +27,7 @@ class CalculatorActivity : AppCompatActivity() {
     private lateinit var btn9: Button
     private lateinit var btnAdd: Button
     private lateinit var btn0: Button
+    private lateinit var btn00:Button
     private lateinit var btnDecimal: Button
     private lateinit var btnEquals: Button
 
@@ -53,11 +54,12 @@ class CalculatorActivity : AppCompatActivity() {
         btn9 = findViewById(R.id.btn9)
         btnAdd = findViewById(R.id.btnPlus)
         btn0 = findViewById(R.id.btn0)
+        btn00 = findViewById(R.id.btn00)
         btnDecimal = findViewById(R.id.btnDot)
         btnEquals = findViewById(R.id.btnEqual)
 
         //Number listeners
-//        btn00.setOnClickListener { appendOnClick(true, "00") }
+        btn00.setOnClickListener { appendOnClick(true, "00") }
         btn0.setOnClickListener { appendOnClick(true, "0") }
         btn1.setOnClickListener { appendOnClick(true, "1") }
         btn2.setOnClickListener { appendOnClick(true, "2") }

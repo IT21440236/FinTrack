@@ -1,12 +1,12 @@
 package com.example.fintrack
-
-import com.example.fintrack.activities.CalculatorActivity
-import junit.framework.TestCase.assertEquals
-import org.junit.Before
-import org.junit.Test
-
-
-
+//
+//import com.example.fintrack.activities.CalculatorActivity
+//import junit.framework.TestCase.assertEquals
+//import org.junit.Before
+//import org.junit.Test
+//
+//
+//
 //class CalculatorUnitTest {
 //    private lateinit var calculator: CalculatorActivity
 //

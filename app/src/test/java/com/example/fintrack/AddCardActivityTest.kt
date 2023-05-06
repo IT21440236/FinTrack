@@ -1,13 +1,13 @@
 package com.example.fintrack
-
-import com.example.fintrack.activities.AddCardActivity
-import com.example.fintrack.models.CardModel
-import com.google.firebase.database.DatabaseError
-import junit.framework.TestCase.*
-import org.junit.Before
-import org.junit.Rule
-import org.junit.Test
-
+//
+//import com.example.fintrack.activities.AddCardActivity
+//import com.example.fintrack.models.CardModel
+//import com.google.firebase.database.DatabaseError
+//import junit.framework.TestCase.*
+//import org.junit.Before
+//import org.junit.Rule
+//import org.junit.Test
+//
 //class AddCardActivityTest {
 //
 //    private lateinit var activity: AddCardActivity

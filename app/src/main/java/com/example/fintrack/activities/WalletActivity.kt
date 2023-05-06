@@ -3,12 +3,16 @@ package com.example.fintrack.activities
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.fintrack.R
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.messaging.Constants.TAG
+import com.google.firebase.messaging.FirebaseMessaging
+import org.w3c.dom.Text
 
 class WalletActivity : AppCompatActivity() {
 
@@ -18,7 +22,7 @@ class WalletActivity : AppCompatActivity() {
     private lateinit var tvAddCard: TextView
     private lateinit var clChooseCard: ConstraintLayout
     private lateinit var imgVVisa: ImageView
-    private lateinit var tvChooseCard: ImageView
+    private lateinit var tvChooseCard: TextView
 
     private lateinit var clTransaction: ConstraintLayout
     private lateinit var imgVTransaction: ImageView

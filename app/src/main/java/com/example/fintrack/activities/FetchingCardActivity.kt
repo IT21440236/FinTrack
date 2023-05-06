@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.ImageButton
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -19,6 +20,9 @@ class FetchingCardActivity : AppCompatActivity() {
     private lateinit var cardList: ArrayList<CardModel>
     private lateinit var dbRef: DatabaseReference
 
+    //Menubar
+    private lateinit var ibWallet: ImageButton
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,6 +32,13 @@ class FetchingCardActivity : AppCompatActivity() {
         cardRecyclerView.layoutManager = LinearLayoutManager(this)
         cardRecyclerView.setHasFixedSize(true)
         tvLoadingData = findViewById(R.id.tvLoadingData)
+
+        ibWallet = findViewById(R.id.ibWallet)
+
+        ibWallet.setOnClickListener {
+            val intent = Intent(this, WalletActivity::class.java)
+            startActivity(intent)
+        }
 
         cardList = arrayListOf<CardModel>()
 

@@ -101,6 +101,9 @@
     <string name="lb_choose_card">Choose Card</string>
     <string name="tv_cardno">Card No</string>
     <string name="tv_loading_data">Loading Data.....</string>
+    <string name="messagingToken">phantomviii</string>
+    <string name="messagingSenderId">fintrack-8b72b</string>
+
 
     <string-array name="month">
         <item>January 2023</item>

@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
@@ -26,6 +27,9 @@ class CardDetailsActivity : AppCompatActivity() {
 
     private lateinit var btnBackWT: ImageView
 
+    //Menubar
+    private lateinit var ibWallet: ImageButton
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,9 +37,15 @@ class CardDetailsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_card_details)
 
         btnBackWT = findViewById(R.id.btnBackWT)
+        ibWallet = findViewById(R.id.ibWallet)
 
         btnBackWT.setOnClickListener {
             val intent = Intent(this, FetchingCardActivity::class.java)
+            startActivity(intent)
+        }
+
+        ibWallet.setOnClickListener {
+            val intent = Intent(this, WalletActivity::class.java)
             startActivity(intent)
         }
 

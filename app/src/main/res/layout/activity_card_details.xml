@@ -433,7 +433,7 @@
             app:srcCompat="@drawable/history" />
 
         <ImageButton
-            android:id="@+id/imageButton5"
+            android:id="@+id/ibWallet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"

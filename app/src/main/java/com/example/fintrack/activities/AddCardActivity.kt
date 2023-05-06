@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.Toast
 import com.example.fintrack.R
@@ -14,6 +15,9 @@ import com.example.fintrack.R.id.etCVV
 import com.example.fintrack.models.CardModel
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.messaging.FirebaseMessaging
+import com.google.firebase.messaging.RemoteMessage
+import kotlin.random.Random
 
 class AddCardActivity : AppCompatActivity() {
 
@@ -26,6 +30,9 @@ class AddCardActivity : AppCompatActivity() {
     private lateinit var etExpiryDate : EditText
     private lateinit var etCVV : EditText
     private lateinit var btnAdd : Button
+
+    //Menu bar
+    private lateinit var ibWallet : ImageButton
 
     private lateinit var dbRef: DatabaseReference
 
@@ -42,6 +49,8 @@ class AddCardActivity : AppCompatActivity() {
         etCVV = findViewById(R.id.etCVV)
         btnAdd = findViewById(R.id.btnAdd)
 
+        ibWallet = findViewById(R.id.ibWallet)
+
         dbRef = FirebaseDatabase.getInstance().getReference("Cards")
 
         btnAdd.setOnClickListener {
@@ -55,6 +64,13 @@ class AddCardActivity : AppCompatActivity() {
             val intent = Intent(this, WalletActivity::class.java)
             startActivity(intent)
         }
+
+        ibWallet.setOnClickListener {
+            val intent = Intent(this, WalletActivity::class.java)
+            startActivity(intent)
+        }
+
+
     }
 
     private fun saveCardData(){

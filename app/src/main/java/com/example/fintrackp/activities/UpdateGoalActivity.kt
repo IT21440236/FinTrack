@@ -51,6 +51,7 @@ class UpdateGoalActivity : AppCompatActivity() {
 
     }
 
+    //create function delete goal record
     private fun deleteGoalRecord(
         id:String
     ){
@@ -69,6 +70,7 @@ class UpdateGoalActivity : AppCompatActivity() {
     }
 
 
+    //create function for set views
     private fun setValuesToViews(){
         intent.getStringExtra(("goalId"))
         tvGoal.text = intent.getStringExtra("financialGoal")
@@ -121,6 +123,7 @@ class UpdateGoalActivity : AppCompatActivity() {
         }
     }
 
+    //create function update goal
     private fun updateGoal(
         id:String,
         finacialgoal: String,

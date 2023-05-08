@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddUser">
+
+    <ImageView
+        android:id="@+id/ImgVBellPg31"
+        android:layout_width="49dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="39dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.717"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/blue_bell" />
+
+    <ImageView
+        android:id="@+id/ImgVArrowPg31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="TODO"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/blue_arrow" />
+
+    <TextView
+        android:id="@+id/lb_AddUserPg31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/segoe_ui"
+        android:text="@string/lb_add_user"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ImgVAdultUserPg31"
+        android:layout_width="123dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="124dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/adult_profile_white" />
+
+    <TextView
+        android:id="@+id/lb_unPg31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="1dp"
+        android:fontFamily="@font/segoe_ui"
+        android:text="@string/lb_name"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/ImgVAdultUserPg31"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lb_ocPg31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="274dp"
+        android:fontFamily="@font/segoe_ui"
+        android:text="@string/lb_occ"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_mailPg31"
+        app:layout_constraintTop_toBottomOf="@+id/edt_mailPg31" />
+
+    <TextView
+        android:id="@+id/lb_mailPg31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="313dp"
+        android:fontFamily="@font/segoe_ui"
+        android:text="@string/lb_mail"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_unPg31"
+        app:layout_constraintTop_toBottomOf="@+id/edt_unPg31" />
+
+    <TextView
+        android:id="@+id/lb_workplacePg31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="262dp"
+        android:fontFamily="@font/segoe_ui"
+        android:text="@string/lb_work_place"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_occPg31"
+        app:layout_constraintTop_toBottomOf="@+id/edt_occPg31" />
+
+    <TextView
+        android:id="@+id/lb_mailPg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="313dp"
+        android:fontFamily="@font/segoe_ui"
+        android:text="@string/lb_mail"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_unPg31"
+        app:layout_constraintTop_toBottomOf="@+id/edt_unPg31" />
+
+    <TextView
+        android:id="@+id/lb_workplacePg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="262dp"
+        android:fontFamily="@font/segoe_ui"
+        android:text="@string/lb_work_place"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_occPg31"
+        app:layout_constraintTop_toBottomOf="@+id/edt_occPg31" />
+
+    <TextView
+        android:id="@+id/lb_occPg31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="274dp"
+        android:fontFamily="@font/segoe_ui"
+        android:text="@string/lb_occ"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_mailPg31"
+        app:layout_constraintTop_toBottomOf="@+id/edt_mailPg31" />
+
+    <TextView
+        android:id="@+id/lb_unPg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="1dp"
+        android:fontFamily="@font/segoe_ui"
+        android:text="@string/lb_name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/ImgVAdultUserPg31"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_unPg31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:fontFamily="@font/segoe_ui"
+        android:hint="@string/hint_enter_un"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/lb_unPg31"
+        app:layout_constraintTop_toBottomOf="@+id/lb_unPg31" />
+
+    <EditText
+        android:id="@+id/edt_mailPg31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="153dp"
+        android:ems="10"
+        android:fontFamily="@font/segoe_ui"
+        android:hint="@string/hint_edt_mail"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lb_mailPg31"
+        app:layout_constraintTop_toBottomOf="@+id/lb_mailPg31" />
+
+    <EditText
+        android:id="@+id/edt_occPg31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="153dp"
+        android:ems="10"
+        android:fontFamily="@font/segoe_ui"
+        android:hint="@string/hint_enter_occ"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lb_occPg31"
+        app:layout_constraintTop_toBottomOf="@+id/lb_occPg31" />
+
+    <EditText
+        android:id="@+id/edt_workplacePg31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="120dp"
+        android:ems="10"
+        android:fontFamily="@font/segoe_ui"
+        android:hint="@string/hint_edt_workplace"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_addPg31"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lb_workplacePg31"
+        app:layout_constraintTop_toBottomOf="@+id/lb_workplacePg31"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <Button
+        android:id="@+id/btn_addPg31"
+        android:layout_width="290dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="640dp"
+        android:layout_marginEnd="156dp"
+        android:background="@drawable/btn_add_bg_colour"
+        android:fontFamily="@font/segoe_ui"
+        android:text="@string/btn_add"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/home_layoutPg31"
+        android:layout_width="411dp"
+        android:layout_height="57dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/ImgVHomePg31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="334dp"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/home_white" />
+
+        <ImageView
+            android:id="@+id/ImgVHistoryPg31"
+            android:layout_width="36dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="235dp"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ImgVHomePg31"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/history_white" />
+
+        <ImageView
+            android:id="@+id/ImgVWalletPg31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ImgVHistoryPg31"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/wallet_white" />
+
+        <ImageView
+            android:id="@+id/ImgVProfilePg31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ImgVWalletPg31"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/adult_profile_white" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

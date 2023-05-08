@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_colour"
+    tools:context=".activities.KidsReport">
+
+    <TextView
+        android:id="@+id/tvKidsReport"
+        android:layout_width="368dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="177dp"
+        android:background="@drawable/bg_et_header"
+        android:gravity="center"
+        android:hint="Hello"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ImgVBellPg34"
+        android:layout_width="49dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="39dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.717"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bell" />
+
+    <ImageView
+        android:id="@+id/ImgVArrowPg34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="TODO"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/white_arrow" />
+
+    <TextView
+        android:id="@+id/lb_kidsPg34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/lb_kids"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lb_transaction_reportPg34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="Kids Report"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="479dp"
+        android:layout_height="795dp"
+        android:layout_marginTop="150dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lb_transaction_reportPg34">
+
+        <TextView
+            android:id="@+id/lb_totBudgetPg34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:fontFamily="@font/segoe_ui"
+            android:text="@string/lb_tot_budget"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lb_hint_amountPg34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/segoe_ui"
+            android:hint="@string/hint_lb_amount"
+            android:gravity="center"
+            android:textColor="@color/teal_700"
+            android:textColorHint="@color/teal_700"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lb_totBudgetPg34" />
+
+        <TextView
+            android:id="@+id/lb_balancePg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/segoe_ui"
+            android:gravity="center"
+            android:text="@string/lb_spend"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lb_hint_balancePg" />
+
+        <TextView
+            android:id="@+id/lb_hint_balancePg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/segoe_ui"
+            android:hint="@string/hint_lb_amount"
+            android:textColor="@color/teal_700"
+            android:textColorHint="@color/teal_700"
+            android:textSize="30sp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lb_expensePg34" />
+
+        <TextView
+            android:id="@+id/lb_expensePg34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/segoe_ui"
+            android:gravity="center"
+            android:text="@string/lb_balance"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lb_hint_amountPg34" />
+
+        <TextView
+            android:id="@+id/lb_hint_expensePg34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/segoe_ui"
+            android:hint="@string/hint_lb_amount"
+            android:gravity="center"
+            android:textColor="@color/teal_700"
+            android:textColorHint="@color/teal_700"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lb_balancePg" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

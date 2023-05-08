@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".activities.NewBudget">
+
+    <TextView
+        android:id="@+id/lbheaderNB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/segoe_ui"
+        android:text="@string/lb_newbudget"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivbellNB"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/bellw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivbackwaredNB"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/backwardw"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbcurrentbudgetcardNB"
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+
+        android:layout_marginTop="16dp"
+        android:background="@drawable/currentbudgetcard"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbheaderNB" />
+
+    <TextView
+        android:id="@+id/lbcurrentbudgetNB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:elevation="110dp"
+        android:fontFamily="@font/segoe_ui"
+        android:text="@string/lb_current_budget"
+        android:textColor="@color/bluesample1"
+        android:textSize="@dimen/rs_subheader2"
+        app:layout_constraintEnd_toEndOf="@+id/lbcurrentbudgetcardNB"
+        app:layout_constraintStart_toStartOf="@+id/lbcurrentbudgetcardNB"
+        app:layout_constraintTop_toTopOf="@+id/lbcurrentbudgetcardNB" />
+
+    <TextView
+        android:id="@+id/lbexpensesNB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="4dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/segoe_ui"
+        android:text="@string/lb_expenses"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/lbcurrentbudgetcardNB"
+        app:layout_constraintTop_toBottomOf="@+id/lbcurrentbudgetNB" />
+
+    <TextView
+        android:id="@+id/lbsavingsNB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="36dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/segoe_ui"
+        android:text="@string/lb_saving"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/lbcurrentbudgetcardNB"
+        app:layout_constraintTop_toBottomOf="@+id/lbcurrentbudgetNB" />
+
+    <TextView
+        android:id="@+id/lbcardexpval1NB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/segoe_ui_bold"
+        android:text="@string/lb_budget_card_expvalue"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/lbcurrentbudgetcardNB"
+        app:layout_constraintTop_toBottomOf="@+id/lbexpensesNB" />
+
+    <TextView
+        android:id="@+id/lbcardsavval1NB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/segoe_ui_bold"
+        android:text="@string/lb_budget_card_savval"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/lbcurrentbudgetcardNB"
+        app:layout_constraintTop_toBottomOf="@+id/lbsavingsNB" />
+
+    <TextView
+        android:id="@+id/lbdaycardNB"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+
+        android:layout_marginTop="12dp"
+        android:background="@drawable/budgetcarddaysbg"
+        android:elevation="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/lbcurrentbudgetcardNB"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="@+id/lbcurrentbudgetcardNB"
+        app:layout_constraintTop_toBottomOf="@+id/lbcurrentbudgetNB" />
+
+    <TextView
+        android:id="@+id/lbcarddayNB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="12dp"
+        android:text="@string/lb_budget_cardday"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/lbdaycardNB"
+        app:layout_constraintEnd_toEndOf="@+id/lbdaycardNB"
+        app:layout_constraintStart_toStartOf="@+id/lbdaycardNB"
+        app:layout_constraintTop_toTopOf="@+id/lbdaycardNB" />
+
+    <TextView
+        android:id="@+id/lbforegroundNB"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:background="@drawable/newbudgetfg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+
+    <TextView
+        android:id="@+id/lbincomeNB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/segoe_ui"
+        android:text="@string/lb_income"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lbforegroundNB" />
+
+    <EditText
+        android:id="@+id/etincomeNB"
+        android:layout_width="260dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/material_dynamic_neutral50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbincomeNB" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnsetNB"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+
+        android:background="@drawable/setbtnbg"
+        android:fontFamily="@font/segoe_ui"
+        android:text="@string/btn_set"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lbforegroundNB" />
+
+    <LinearLayout
+        android:id="@+id/llPlans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="22sp"
+        app:layout_constraintTop_toBottomOf="@+id/etincomeNB">
+    </LinearLayout>
+
+<!--    <TextView-->
+<!--        android:id="@+id/lbcard1NB"-->
+<!--        android:layout_width="350dp"-->
+<!--        android:layout_height="120dp"-->
+
+<!--        android:layout_marginTop="12dp"-->
+<!--        android:background="@drawable/currentbudgetcard"-->
+<!--        android:elevation="10dp"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/lbforegroundNB"-->
+<!--        app:layout_constraintHorizontal_bias="0.465"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/lbforegroundNB"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/etincomeNB" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/lbcard2NB"-->
+<!--        android:layout_width="350dp"-->
+<!--        android:layout_height="120dp"-->
+<!--        android:layout_marginTop="36dp"-->
+<!--        android:background="@drawable/currentbudgetcard"-->
+<!--        android:elevation="10dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.488"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/lbcard1NB" />-->
+
+<!--    -->
+
+<!--    <TextView-->
+<!--        android:id="@+id/lbmonexph1NB"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="24dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:elevation="10dp"-->
+<!--        android:text="@string/lb_monthly_expense"-->
+<!--        android:textColor="@color/greensample2"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/lbcard1NB"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/lbcard1NB" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/lbstarterNB"-->
+<!--        android:layout_width="61dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginEnd="24dp"-->
+<!--        android:elevation="10dp"-->
+<!--        android:text="@string/lb_starter"-->
+<!--        android:textColor="@color/greensample1"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/lbcard1NB"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/lbcard1NB" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/lbmonexphval1NB"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="24dp"-->
+<!--        android:layout_marginTop="3dp"-->
+<!--        android:elevation="10dp"-->
+<!--        android:fontFamily="@font/segoe_ui_bold"-->
+<!--        android:text="@string/lb_newbudget_card_expvalue1"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/lbcard1NB"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/lbmonexph1NB" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/lbsaving1NB"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="24dp"-->
+<!--        android:layout_marginTop="6dp"-->
+<!--        android:elevation="10dp"-->
+<!--        android:text="@string/lb_saving"-->
+<!--        android:textColor="@color/greensample2"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/lbcard1NB"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/lbmonexphval1NB" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/lbsavingval1NB"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="24dp"-->
+<!--        android:layout_marginTop="3dp"-->
+<!--        android:elevation="10dp"-->
+<!--        android:fontFamily="@font/segoe_ui_bold"-->
+<!--        android:text="@string/lb_newbudget_card_savval1"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/lbcard1NB"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/lbsaving1NB" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/ivstarterNB"-->
+<!--        android:layout_width="45dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="24dp"-->
+<!--        android:elevation="10dp"-->
+<!--        android:src="@drawable/startericon"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/lbcard1NB"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/lbstarterNB" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/lbmonexph2NB"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="28dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:elevation="10dp"-->
+<!--        android:text="@string/lb_monthly_expense"-->
+<!--        android:textColor="@color/bluesample2"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/lbcard2NB"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/lbcard2NB" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/lbmonexphval2NB"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="28dp"-->
+<!--        android:layout_marginTop="3dp"-->
+<!--        android:elevation="10dp"-->
+<!--        android:fontFamily="@font/segoe_ui_bold"-->
+<!--        android:text="@string/lb_newbudget_card_monexpval2"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/lbcard2NB"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/lbmonexph2NB" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/lbsaving2NB"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="28dp"-->
+<!--        android:layout_marginTop="6dp"-->
+<!--        android:elevation="10dp"-->
+<!--        android:text="@string/lb_saving"-->
+<!--        android:textColor="@color/bluesample2"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/lbcard2NB"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/lbmonexphval2NB" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/lbsavingval2NB"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="28dp"-->
+<!--        android:layout_marginTop="3dp"-->
+<!--        android:elevation="10dp"-->
+<!--        android:fontFamily="@font/segoe_ui_bold"-->
+<!--        android:text="@string/lb_newbudget_card_savval2"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/lbcard2NB"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/lbsaving2NB" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/lbrecomendedNB"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginEnd="24dp"-->
+<!--        android:elevation="10dp"-->
+<!--        android:text="@string/lb_newbudget_cardh2"-->
+<!--        android:textColor="@color/bluesample2"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/lbcard2NB"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/lbcard2NB" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/ivrecomendedNB"-->
+<!--        android:layout_width="45dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="24dp"-->
+<!--        android:elevation="10dp"-->
+<!--        android:src="@drawable/recomendedicon"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/lbcard2NB"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/lbrecomendedNB" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/lbforegroundNB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imgHomeiconNB"
+            android:layout_width="5dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/homeicon" />
+
+        <ImageView
+            android:id="@+id/imgHistoryiconNB"
+            android:layout_width="5dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/historywicon" />
+
+        <ImageView
+            android:id="@+id/imgWalleticonNB"
+            android:layout_width="5dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/walleticon" />
+
+        <ImageView
+            android:id="@+id/imgUsericonNB"
+            android:layout_width="5dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/usericon" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

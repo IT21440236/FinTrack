@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".activities.AddIncome">
+
+    <TextView
+        android:id="@+id/lbaddincomeAIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/segoe_ui"
+        android:text="@string/lb_add_income"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbforegroundAIP"
+        android:layout_width="match_parent"
+        android:layout_height="530dp"
+        android:background="@drawable/curveforeground"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.995" />
+
+    <TextView
+        android:id="@+id/lbnameAIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/segoe_ui_bold"
+        android:text="@string/lb_name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/rs_cardheader"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lbforegroundAIP" />
+
+    <EditText
+        android:id="@+id/etnameAIP"
+        android:layout_width="337dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:alpha="0.5"
+        android:background="@drawable/inputbg"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbnameAIP" />
+
+    <TextView
+        android:id="@+id/lbcategoryAIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/segoe_ui_bold"
+        android:text="@string/lb_category"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etnameAIP" />
+
+    <Spinner
+        android:id="@+id/spcategoryAIP"
+        android:layout_width="337dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:alpha="0.5"
+        android:background="@drawable/spinnerbg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbcategoryAIP" />
+
+    <TextView
+        android:id="@+id/lbamountAIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/segoe_ui_bold"
+        android:text="@string/lb_amount"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spcategoryAIP" />
+
+    <EditText
+        android:id="@+id/etamountAIP"
+        android:layout_width="337dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:alpha="0.5"
+        android:background="@drawable/inputbg"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbamountAIP" />
+
+    <TextView
+        android:id="@+id/lbdateAIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/segoe_ui_bold"
+        android:text="@string/lb_date"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/lbforegroundAIP"
+        app:layout_constraintTop_toBottomOf="@+id/etamountAIP" />
+
+    <EditText
+        android:id="@+id/etdateAIP"
+        android:layout_width="337dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:alpha="0.5"
+        android:background="@drawable/datebg"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/lbforegroundAIP"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="@+id/lbforegroundAIP"
+        app:layout_constraintTop_toBottomOf="@+id/lbdateAIP" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnaddAIP"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/addbtn"
+        android:fontFamily="@font/segoe_ui"
+        android:text="@string/btn_add"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/lbforegroundAIP"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/lbforegroundAIP"
+        app:layout_constraintTop_toBottomOf="@+id/etdateAIP" />
+
+    <ImageView
+        android:id="@+id/imgbackwardnavAI"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backwardw" />
+
+    <ImageView
+        android:id="@+id/imgbellAI"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bellw" />
+
+    <LinearLayout
+        android:id="@+id/linearlayoutAI"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/lbforegroundAIP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imgHomeiconAI"
+            android:layout_width="5dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/homeicon" />
+
+        <ImageView
+            android:id="@+id/imgHistoryiconAI"
+            android:layout_width="5dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/historywicon" />
+
+        <ImageView
+            android:id="@+id/imgWalleticonAI"
+            android:layout_width="5dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/walleticon" />
+
+        <ImageView
+            android:id="@+id/imgUsericonAI"
+            android:layout_width="5dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/usericon" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

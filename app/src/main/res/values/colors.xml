@@ -29,4 +29,33 @@
     <color name="redstart">#A71D31</color>
     <color name="redend">#3F0D12</color>
 
+    <color name="bluesample1">#0B82DA</color>
+    <color name="greensample1">#10B904</color>
+    <color name="greensample2">#098500</color>
+    <color name="greensample3">#A3EB9E</color>
+    <color name="greensample4">#58CF50</color>
+    <color name="bluesample2">#0458B9</color>
+    <color name="bluesample3">#168FD6</color>
+    <color name="gradientblue1">#009FFD</color>
+    <color name="gradientblue2">#1662B5</color>
+    <color name="gradientblue3">#2A2A72</color>
+    <color name="gray">#FAFAFA</color>
+
+<!--    Wasana-->
+    <color name="dark_cyan_blue">#0062b8</color>
+    <color name="gradient_light_blue">#87BAFE</color>
+    <color name="parisM_blue">#2A2A72</color>
+    <color name="center_blue">#1662B5</color>
+    <color name="start_blue">#009FFD</color>
+    <color name="center_black">#090909</color>
+    <color name="end_black">#202020</color>
+    <color name="powder_blue">#b0e0e6</color>
+    <color name="skyblue">#87ceeb</color>
+    <color name="pink">#F699CD</color>
+    <color name="Periwinkle">#CCCCFF</color>
+    <color name="blush">#FEC5E5</color>
+    <color name="Blue_Gray">#6699CC</color>
+    <color name="ice_blue">#C6E6FB</color>
+<!--    Wasana-->
+
 </resources>

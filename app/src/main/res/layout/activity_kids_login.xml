@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_colour"
+    tools:context=".activities.KidsLogin">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Welcome to Fintrack"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/kids_word" />
+
+    <EditText
+        android:id="@+id/etKidLog"
+        android:layout_width="312dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="572dp"
+        android:layout_marginEnd="141dp"
+        android:background="@drawable/et_bg_colour"
+        android:gravity="center"
+        android:hint="Name"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnKidLog"
+        android:layout_width="122dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginEnd="272dp"
+        android:background="@drawable/btn_add_bg_colour"
+        android:textColor="@color/white"
+        android:text="Kids Savings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/btnKidReport"
+        android:layout_width="115dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/btn_add_bg_colour"
+        android:text="Report"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="410dp"
+        android:layout_height="596dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/dragon_big" />
+</androidx.constraintlayout.widget.ConstraintLayout>

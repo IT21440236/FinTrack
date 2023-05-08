@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".activities.AddExpense">
+
+    <TextView
+        android:id="@+id/lbaddexpenseAEP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/segoe_ui"
+        android:text="@string/lb_add_expense"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbforegroundAEP"
+        android:layout_width="match_parent"
+        android:layout_height="530dp"
+        android:background="@drawable/curveforeground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/lbnameAEP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/segoe_ui_bold"
+        android:text="@string/lb_name"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/lbforegroundAEP"
+        app:layout_constraintTop_toTopOf="@+id/lbforegroundAEP" />
+
+    <Spinner
+        android:id="@+id/spcategoryAEP"
+        android:layout_width="337dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/spinnerbg"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/lbforegroundAEP"
+        app:layout_constraintTop_toBottomOf="@+id/lbcategoryAEP" />
+
+    <EditText
+        android:id="@+id/etnameAEP"
+        android:layout_width="337dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/inputbg"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/lbforegroundAEP"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="@+id/lbforegroundAEP"
+        app:layout_constraintTop_toBottomOf="@+id/lbnameAEP" />
+
+    <TextView
+        android:id="@+id/lbcategoryAEP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/segoe_ui_bold"
+        android:text="@string/lb_category"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/lbforegroundAEP"
+        app:layout_constraintTop_toBottomOf="@+id/etnameAEP" />
+
+    <TextView
+        android:id="@+id/lbamountAEP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/segoe_ui_bold"
+        android:text="@string/lb_amount"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/lbforegroundAEP"
+        app:layout_constraintTop_toBottomOf="@+id/spcategoryAEP" />
+
+    <EditText
+        android:id="@+id/etamountAEP"
+        android:layout_width="337dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/inputbg"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/lbforegroundAEP"
+        app:layout_constraintStart_toStartOf="@+id/lbforegroundAEP"
+        app:layout_constraintTop_toBottomOf="@+id/lbamountAEP" />
+
+    <TextView
+        android:id="@+id/lbdateAEP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/segoe_ui_bold"
+        android:text="@string/lb_date"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/lbforegroundAEP"
+        app:layout_constraintTop_toBottomOf="@+id/etamountAEP" />
+
+    <EditText
+        android:id="@+id/etdateAEP"
+        android:layout_width="337dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/datebg"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/lbforegroundAEP"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="@+id/lbforegroundAEP"
+        app:layout_constraintTop_toBottomOf="@+id/lbdateAEP" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnaddAEP"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/addbtn"
+        android:fontFamily="@font/segoe_ui"
+        android:text="@string/btn_add"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/lbforegroundAEP"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/lbforegroundAEP"
+        app:layout_constraintTop_toBottomOf="@+id/etdateAEP" />
+
+    <ImageView
+        android:id="@+id/imgbackwardnavAE"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backwardw" />
+
+    <ImageView
+        android:id="@+id/imgbellAE"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bellw" />
+
+    <LinearLayout
+        android:id="@+id/linearlayoutAE"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/lbforegroundAEP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imgHomeiconAE"
+            android:layout_width="5dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/homeicon" />
+        <ImageView
+            android:id="@+id/imgHistoryiconAE"
+            android:layout_width="5dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/historywicon" />
+        <ImageView
+            android:id="@+id/imgWalleticonAE"
+            android:layout_width="5dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/walleticon" />
+        <ImageView
+            android:id="@+id/imgUsericonAE"
+            android:layout_width="5dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/usericon" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

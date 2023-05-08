@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".activities.Income">
+
+    <TextView
+        android:id="@+id/lbheaderIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/segoe_ui"
+        android:text="@string/lb_income"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivbackwaredIP"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backwardw" />
+
+    <ImageView
+        android:id="@+id/ivbellIP"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/bellw" />
+
+    <TextView
+        android:id="@+id/lbforegroundIP"
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:background="@drawable/newbudgetfg"
+        app:layout_constraintBottom_toBottomOf="@+id/linearlayoutIP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnMonthIP"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/lbincomecardIP"
+        android:layout_width="350dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/currentbudgetcard"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.393"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbheaderIP" />
+
+    <TextView
+        android:id="@+id/lbincomecardhIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/segoe_ui"
+        android:text="@string/lb_income"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/ivincomeiconIP"
+        app:layout_constraintTop_toTopOf="@+id/lbincomecardIP" />
+
+    <TextView
+        android:id="@+id/lbincomecardmonIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="24dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/segoe_ui"
+        android:text="@string/lb_february"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/lbincomecardIP"
+        app:layout_constraintTop_toTopOf="@+id/lbincomecardIP" />
+
+    <ImageView
+        android:id="@+id/ivincomeiconIP"
+        android:layout_width="64dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:elevation="10dp"
+        app:layout_constraintStart_toStartOf="@+id/lbincomecardIP"
+        app:layout_constraintTop_toTopOf="@+id/lbincomecardIP"
+        app:srcCompat="@drawable/incomeicon" />
+
+    <TextView
+        android:id="@+id/lbincomecardvalIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/segoe_ui_bold"
+        android:text="@string/lb_incpgcardval"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/ivincomeiconIP"
+        app:layout_constraintTop_toBottomOf="@+id/lbincomecardhIP" />
+
+    <TextView
+        android:id="@+id/lbsavingsvalIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/segoe_ui"
+        android:hint="@string/lb_hint_value5"
+        android:textColor="@color/bluesample3"
+        android:textColorHint="@color/bluesample3"
+        android:textSize="22sp"
+        app:layout_constraintStart_toEndOf="@+id/lbsavingsIP"
+        app:layout_constraintTop_toTopOf="@+id/lbforegroundIP" />
+
+    <TextView
+        android:id="@+id/lbsavingsIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="4dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/segoe_ui"
+        android:text="@string/lb_saving_divider"
+        android:textColor="@color/bluesample3"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lbforegroundIP" />
+
+    <Spinner
+        android:id="@+id/spnMonthIP"
+        android:layout_width="309dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/spinnerbg2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbincomecardIP" />
+
+
+    <ImageView
+        android:id="@+id/ivAddiconblueIP"
+        android:layout_width="55dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:elevation="10dp"
+        app:layout_constraintStart_toEndOf="@+id/searchviewIP"
+        app:layout_constraintTop_toTopOf="@+id/lbforegroundIP"
+        app:srcCompat="@drawable/addicon3" />
+
+    <SearchView
+        android:id="@+id/searchviewIP"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:alpha="0.5"
+        android:background="@drawable/searchbg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbsavingsIP" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvIncomesIP"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/lbLoadingIP"/>
+
+
+    <TextView
+        android:id="@+id/lbLoadingIP"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="92dp"
+        android:text="@string/lb_loading"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:visibility="gone"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchviewIP" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/lbValue1IP"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginEnd="68dp"-->
+<!--        android:fontFamily="@font/segoe_ui"-->
+<!--        android:hint="@string/lb_hint_value_6"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textColorHint="@color/black"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/searchviewIP" />-->
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/lbName1IP"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="24dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:fontFamily="@font/segoe_ui"-->
+<!--        android:hint="@string/lb_hint_cash_received"-->
+<!--        android:text="@string/lb_cashreceived"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="@dimen/rs_incexpheader"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/searchviewIP" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/lbDate1IP"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="80dp"-->
+<!--        android:fontFamily="@font/segoe_ui"-->
+<!--        android:hint="@string/lb_hint_date2"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/lbValue1IP" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/lbCategory1IP"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="24dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:fontFamily="@font/segoe_ui"-->
+<!--        android:hint="@string/lb_hint_investment"-->
+<!--        android:textSize="@dimen/rs_incexpheader2"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/lbName1IP" />-->
+
+<!--    -->
+
+<!--    <View-->
+<!--        android:id="@+id/divider"-->
+<!--        android:layout_width="350dp"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:background="?android:attr/listDivider"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.491"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/lbCategory1IP" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/lbName2IP"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="24dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:fontFamily="@font/segoe_ui"-->
+<!--        android:hint="@string/lb_hint_cash_received"-->
+<!--        android:text="@string/lb_cashreceived"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/divider" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/lbValue2IP"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginEnd="68dp"-->
+<!--        android:fontFamily="@font/segoe_ui"-->
+<!--        android:hint="@string/lb_hint_value_6"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textColorHint="@color/black"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/lbforegroundIP"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/divider" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/lbCategory2IP"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="24dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:fontFamily="@font/segoe_ui"-->
+<!--        android:hint="@string/lb_hint_fund_transfer"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/lbforegroundIP"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/lbName2IP" />-->
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/lbDate2IP"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="76dp"-->
+<!--        android:hint="@string/lb_hint_date"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/lbforegroundIP"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/lbValue2IP" />-->
+
+<!--    <View-->
+<!--        android:id="@+id/divider2"-->
+<!--        android:layout_width="350dp"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        android:background="?android:attr/listDivider"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.491"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/lbCategory2IP" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imgUpdateicon1IP"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:clickable="true"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.59"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/lbValue1IP"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/searchviewIP"-->
+<!--        app:srcCompat="@drawable/updateicon" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imgDeleteicon1IP"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.518"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/lbDate1IP"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/imgUpdateicon1IP"-->
+<!--        app:srcCompat="@drawable/deleteicon" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imgUpdateicon2IP"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.266"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/lbValue2IP"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/divider"-->
+<!--        app:srcCompat="@drawable/updateicon" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imgDeleteicon2IP"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.509"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/lbDate2IP"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/imgUpdateicon2IP"-->
+<!--        app:srcCompat="@drawable/deleteicon" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imgUpdateicon3IP"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.473"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/lbValue3IP"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/divider2"-->
+<!--        app:srcCompat="@drawable/updateicon" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imgDeleteicon3IP"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.568"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/lbDateIP"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/imgUpdateicon3IP"-->
+<!--        app:srcCompat="@drawable/deleteicon" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/lbName3IP"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="24dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:hint="@string/lb_hint_cash_received"-->
+<!--        android:textColorHint="@color/black"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/divider2" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/lbCategory3IP"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="24dp"-->
+<!--        android:layout_marginTop="9dp"-->
+<!--        android:hint="@string/lb_hint_fund_transfer"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/lbName3IP" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/lbValue3IP"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginEnd="68dp"-->
+<!--        android:hint="@string/lb_hint_value3"-->
+<!--        android:textColorHint="@color/black"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/divider2" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/lbDateIP"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="76dp"-->
+<!--        android:hint="@string/lb_hint_date3"-->
+<!--        android:textColorHint="@color/black"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/lbValue3IP" />-->
+
+    <LinearLayout
+        android:id="@+id/linearlayoutIP"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imgHomeiconIP"
+            android:layout_width="5dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/homeicon" />
+
+        <ImageView
+            android:id="@+id/imgHistoryiconIP"
+            android:layout_width="5dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/historywicon" />
+
+        <ImageView
+            android:id="@+id/imgWalleticonIP"
+            android:layout_width="5dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/walleticon" />
+
+        <ImageView
+            android:id="@+id/imgUsericonIP"
+            android:layout_width="5dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/usericon" />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

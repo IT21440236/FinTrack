@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Subscriptions">
+
+    <TextView
+        android:id="@+id/lbSubscriptionPg22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/segoe_ui"
+        android:text="@string/lb_subscriptions"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbForegroundPg22"
+        android:layout_width="match_parent"
+        android:layout_height="530dp"
+        android:background="@drawable/curveforeground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Spinner
+        android:id="@+id/spnDatePg22"
+        android:layout_width="149dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:alpha="0.5"
+        android:background="@drawable/spinnerbg"
+        app:layout_constraintStart_toStartOf="@+id/lbForegroundPg22"
+        app:layout_constraintTop_toTopOf="@+id/lbForegroundPg22" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="191dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        android:alpha="0.5"
+        android:background="@drawable/searchbg"
+        app:layout_constraintEnd_toEndOf="@+id/lbForegroundPg22"
+        app:layout_constraintTop_toTopOf="@+id/lbForegroundPg22" />
+
+    <ImageView
+        android:id="@+id/imgbackwardnavSP"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backwardw" />
+
+    <ImageView
+        android:id="@+id/imgbellSP"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bellw" />
+
+    <TextView
+        android:id="@+id/lbCard1SP"
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/currentbudgetcard"
+        android:elevation="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnDatePg22" />
+
+    <TextView
+        android:id="@+id/lbCard2SP"
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/currentbudgetcard"
+        android:elevation="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbCard1SP" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/lbForegroundPg22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imgHomeiconSP"
+            android:layout_width="5dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/homeicon" />
+
+        <ImageView
+            android:id="@+id/imgHistoryiconSP"
+            android:layout_width="5dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/historywicon" />
+
+        <ImageView
+            android:id="@+id/imgWalleticonSP"
+            android:layout_width="5dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/walleticon" />
+
+        <ImageView
+            android:id="@+id/imgUsericonSP"
+            android:layout_width="5dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/usericon" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="32dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="28dp"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/lbCard1SP"
+        app:layout_constraintTop_toTopOf="@+id/lbCard1SP"
+        app:srcCompat="@drawable/subscriptionnavigateicon" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="32dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="28dp"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/lbCard2SP"
+        app:layout_constraintTop_toTopOf="@+id/lbCard2SP"
+        app:srcCompat="@drawable/subscriptionnavigateicon" />
+
+    <TextView
+        android:id="@+id/lbNameSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/segoe_ui"
+        android:hint="@string/lb_hint_sub1"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/lbCard1SP"
+        app:layout_constraintTop_toTopOf="@+id/lbCard1SP" />
+
+    <TextView
+        android:id="@+id/lbValue1SP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/segoe_ui"
+        android:hint="@string/lb_hint_value6"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/lbCard1SP"
+        app:layout_constraintTop_toBottomOf="@+id/lbNameSP" />
+
+    <TextView
+        android:id="@+id/lbUsers1SP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/segoe_ui"
+        android:hint="@string/lb_hint_users"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/lbCard1SP"
+        app:layout_constraintTop_toBottomOf="@+id/lbValue1SP" />
+
+    <TextView
+        android:id="@+id/lbName2SP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/segoe_ui"
+        android:hint="@string/lb_hint_sub2"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/lbCard2SP"
+        app:layout_constraintTop_toTopOf="@+id/lbCard2SP" />
+
+    <TextView
+        android:id="@+id/lbValue2SP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/segoe_ui"
+        android:hint="@string/lb_hint_value4"
+        app:layout_constraintStart_toStartOf="@+id/lbCard2SP"
+        app:layout_constraintTop_toBottomOf="@+id/lbName2SP" />
+
+    <TextView
+        android:id="@+id/lbUsers2SP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/segoe_ui"
+        android:hint="@string/lb_hint_users"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/lbCard2SP"
+        app:layout_constraintTop_toBottomOf="@+id/lbValue2SP" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        app:srcCompat="@drawable/addicon2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

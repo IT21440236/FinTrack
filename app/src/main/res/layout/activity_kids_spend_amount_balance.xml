@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_colour"
+    tools:context=".activities.KidsSpendAmountBalance">
+
+    <Button
+        android:id="@+id/btnSpendKidHome"
+        android:layout_width="174dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/bg_button_kid_spend"
+        android:text="@string/lb_spend"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/ImgPenguinPg42"
+        app:layout_constraintHorizontal_bias="0.728"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImgPiggyPg42" />
+
+    <Button
+        android:id="@+id/btnAmountKidHome"
+        android:layout_width="174dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/bg_button_kid_piggybank"
+        android:text="@string/lb_piggyBank"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toEndOf="@+id/ImgPiggyPg42"
+        app:layout_constraintTop_toBottomOf="@+id/tvKidsHome" />
+
+    <Button
+        android:id="@+id/btnBalanceKidHome"
+        android:layout_width="174dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/bg_button_kid_save"
+        android:text="@string/lb_save"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ImgHoneyPg42"
+        app:layout_constraintTop_toBottomOf="@+id/ImgPenguinPg42" />
+
+    <TextView
+        android:id="@+id/tvKidsHome"
+        android:layout_width="368dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="177dp"
+        android:background="@drawable/bg_et_header"
+        android:gravity="center"
+        android:hint="Hello"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/home_layputPg44"
+        android:layout_width="411dp"
+        android:layout_height="57dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/ImgVHomePg44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.46"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.571"
+            app:srcCompat="@drawable/home_blue" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/ImgPiggyPg42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="71dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvKidsHome"
+        app:srcCompat="@drawable/piggy_bank"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/ImgPenguinPg42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="40dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAmountKidHome"
+        app:srcCompat="@drawable/penguin"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/ImgHoneyPg42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toStartOf="@+id/ImgPenguinPg42"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSpendKidHome"
+        app:srcCompat="@drawable/honey" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

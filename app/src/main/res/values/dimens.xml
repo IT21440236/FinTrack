@@ -16,4 +16,28 @@
     <dimen name="rs_drawable_padding">5dp</dimen>
     <dimen name="rs_layout_margintop_textview">18dp</dimen>
     <dimen name="rs_label">14sp</dimen>
+
+<!--    yasitha-->
+    <dimen name="rs_cardheader">16sp</dimen>
+    <dimen name="rs_subheader">22sp</dimen>
+    <dimen name="rs_incexpheader">20sp</dimen>
+    <dimen name="rs_incexpheader2">16sp</dimen>
+    <dimen name="rs_subheader2">24sp</dimen>
+    <dimen name="rs_budgetheader">34sp</dimen>
+    <dimen name="rs_btn">20sp</dimen>
+    <dimen name="rs_header_layout_height">40dp</dimen>
+    <dimen name="rs_header_layout_width">340dp</dimen>
+    <dimen name="rs_header_margin_top">24dp</dimen>
+    <dimen name="rs_edittext_height">35dp</dimen>
+    <dimen name="rs_edittext_width">337dp</dimen>
+    <dimen name="rs_addbtn1_width">340dp</dimen>
+    <dimen name="rs_addbtn1_height">40dp</dimen>
+    <dimen name="rs_updatebtn_width">340dp</dimen>
+    <dimen name="rs_updatebtn_height">40dp</dimen>
+    <dimen name="rs_backwarednav_layout_top">12dp</dimen>
+    <dimen name="rs_belldnav_layout_top">12dp</dimen>
+    <dimen name="rs_budgetcard_width">350dp</dimen>
+    <dimen name="rs_budgetcard_height">120dp</dimen>
+<!--    yasitha-->
+
 </resources>

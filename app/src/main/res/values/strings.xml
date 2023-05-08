@@ -129,5 +129,161 @@
         <item>Card **8833</item>
     </string-array>
 
+<!--    Yasitha-->
+    <string name="lb_newbudget">New Budget</string>
+    <string name="lb_current_budget">Current Budget</string>
+    <string name="lb_expenses">Expenses</string>
+    <string name="lb_budget_card_expvalue">Rs 50,000</string>
+    <string name="lb_budget_card_savval">Rs 220,000</string>
+    <string name="lb_budget_cardday">30 days</string>
+    <string name="btn_set">Set</string>
+    <string name="lb_select_budget">Select Budget</string>
+    <string name="lb_starter">Starter</string>
+    <string name="lb_monthly_expense">Monthly Expense</string>
+    <string name="lb_newbudget_card_expvalue1">Rs 40,000 / month</string>
+    <string name="lb_newbudget_card_savval1">Rs 230,000 / month</string>
+    <string name="lb_newbudget_card_monexpval2">Rs 60,000 / month</string>
+    <string name="lb_newbudget_card_savval2">Rs 210,000 / month</string>
+    <string name="lb_newbudget_cardh2">Recomended</string>
+    <string name="lb_incpgcardval">Rs 250,000</string>
+    <string name="lb_february">February</string>
+    <string name="lb_year">2023</string>
+    <string name="lb_saving_divider">Savings |</string>
+    <string name="lb_expense_divider">Expenses |</string>
+    <string name="lb_add_income">Add Income</string>
+    <string name="lb_update_income">Update Income</string>
+    <string name="lb_add_expense">Add Expense</string>
+    <string name="lb_update">Update Expense</string>
+    <string name="lb_category">Category</string>
+    <string name="lb_date">Date</string>
+    <string name="lb_add_subscription">Add Subscription</string>
+    <string name="lb_expense">Expense</string>
+    <string name="lb_saving">Savings</string>
+    <string name="ln_netflix">Netflix</string>
+    <string name="lb_entertainment">Entertainment</string>
+    <string name="lb_cashreceived">Cash Received</string>
+    <string name="lb_hint_fund_transfer">Fund Transfer</string>
+    <string name="lb_hint_value_6">Rs 20,000</string>
+    <string name="lb_hint_cash_received">Cash Received</string>
+    <string name="lb_hint_investment">Investments</string>
+    <string name="lb_hint_date">22/02/2023</string>
+    <string name="lb_hint_date2">25/02/2023</string>
+    <string name="lb_hint_value3">Rs15,000</string>
+    <string name="lb_hint_date3">18/02/2023</string>
+    <string name="lb_value2">Rs 70,000</string>
+    <string name="lb_hint_value5">Rs 180,000</string>
+    <string name="lb_days">Days</string>
+    <string name="lb_hint_sub1">Netflix</string>
+    <string name="lb_hint_sub2">Spotify</string>
+    <string name="lb_hint_entertainment">Entertainment</string>
+    <string name="lb_value_hint7">Rs 1,200</string>
+    <string name="lb_keells">Keells</string>
+    <string name="lb_hint_grocery">Grocery</string>
+
+    <string-array name="date">
+        <item>January 2023</item>
+        <item>February 2023</item>
+        <item>March 2023</item>
+        <item>April 2023</item>
+        <item>May 2023</item>
+        <item>June 2023</item>
+        <item>July 2023</item>
+        <item>August 2023</item>
+        <item>September 2023</item>
+        <item>November 2023</item>
+        <item>December 2023</item>
+         
+    </string-array>
+
+    <string-array name="categoryincome">
+        <item>Investments</item>
+        <item>Fund Transfer</item>
+        <item>Bank savings interest</item>
+        <item>current account interest</item>
+        <item>debtors</item>
+         
+    </string-array>
+
+    <string-array name="categoryexpense">
+        <item>Entertainment</item>
+        <item>Grocery</item>
+        <item>Shopping</item>
+        <item>Transport</item>
+        <item>Food</item>
+         
+    </string-array>
+
+
+
+    <string name="lb_hint_subname">Name</string>
+    <string name="lb_hint_subcategory">category</string>
+    <string name="lb_hint_subpayment">Payment</string>
+    <string name="lb_hint_subdate">Amount</string>
+    <string name="lb_hint_users">Users / 01</string>
+    <string name="lb_hint_value4">Rs 500 / month</string>
+    <string name="lb_hint_value6">Rs 1,200 / month</string>
+    <string name="lb_hint_sub1net">Netflix</string>
+    <string name="lb_hint_sub2spot">Spotify</string>
+    <string name="lb_loading">Loading.....</string>
+<!--    Yasitha-->
+
+<!--    wasana-->
+    <string name="lb_spend">Spend</string>
+    <string name="lb_save">Save</string>
+    <string name="hint_amount">Amount</string>
+    <string name="lb_piggyBank">My Piggy Bank</string>
+    <string name="hint_lb_amount">Rs.XXXX</string>
+    <string name="lb_kid_details">Kid Details</string>
+    <string name="hint_edt_name">Enter your name</string>
+    <string name="hint_edt_age">Enter your age</string>
+    <string name="hint_edt_grade">Enter your grade</string>
+    <string name="hint_edt_school">Enter your school</string>
+    <string name="lb_age">Age</string>
+    <string name="lb_grade">Grade</string>
+    <string name="lb_school">School</string>
+    <string name="lb_add_kid">Add Kid</string>
+    <string name="lb_set_up_family">Set Up a Family Plan</string>
+    <string name="lb_existing_users">Existing Users</string>
+    <string name="lb_search">Search User</string>
+    <string name="btn_add_user">Add User</string>
+    <string name="lb_add_user">Add User</string>
+    <string name="lb_work_place">Work Place</string>
+    <string name="lb_occ">Occupation</string>
+    <string name="hint_enter_un">Enter your Username</string>
+    <string name="hint_enter_occ">Enter your Occupation</string>
+    <string name="lb_mail">Email</string>
+    <string name="hint_edt_mail">Enter your Email</string>
+    <string name="lb_pw">Password</string>
+    <string name="hint_edt_pwd">Enter your Password</string>
+    <string name="hint_edt_nic">Enter NIC</string>
+    <string name="hint_edt_tel">Enter your Contact Number</string>
+    <string name="lb_workplace">Work Place</string>
+    <string name="hint_edt_workplace">Enter you work place</string>
+    <string name="lb_user_details">User Details</string>
+    <string name="hint_name">name</string>
+    <string name="hint_age">age</string>
+    <string name="hint_grade">grade</string>
+    <string name="hint_scl">school</string>
+    <string name="hint_workplace">work place</string>
+    <string name="hint_mail">mail</string>
+    <string name="hint_nic">NIC</string>
+    <string name="hint_pwd">password</string>
+    <string name="hint_un">username</string>
+    <string name="lb_kids">Kids</string>
+    <string name="lb_transaction_report">Transaction Report</string>
+    <string name="lb_tot_budget">Total Budget</string>
+    <string name="hint_kid_name">Brian</string>
+    <string name="hint_kid_age">8</string>
+    <string name="hint_kid_grade">Grade 3</string>
+    <string name="hint_kid_school">St. Peter\'s Collage</string>
+    <string name="niko">Nicholas Perera</string>
+    <string name="marry">Marry Jane</string>
+    <string name="balance">Rs.3000</string>
+    <string name="company_name">Maga</string>
+    <string name="e_mail_niko">Nicholas Perera</string>
+    <string name="hi_greeting">Hi! Brian</string>
+<!--    wasana-->
+
+
 </resources>
 

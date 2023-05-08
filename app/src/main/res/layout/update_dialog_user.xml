@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/etMemNameD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Member Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/etMemEmailD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Member Email"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/etMemOccD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Member Occupation"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/etMemWorkD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Member Work Place"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/btnUpdateDataD"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_add_bg_colour"
+        android:text="Update Data" />
+
+</LinearLayout>

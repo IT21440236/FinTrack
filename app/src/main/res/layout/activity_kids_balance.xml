@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_colour"
+    tools:context=".activities.KidsBalance">
+
+    <TextView
+        android:id="@+id/lb_savePg"
+        android:layout_width="404dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/segoe_ui"
+        android:gravity="center"
+        android:text="@string/lb_save"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lb_savePg42"
+        android:layout_width="221dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="182dp"
+        android:background="@drawable/et_bg_colour"
+        android:gravity="center"
+        android:hint="Balance"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImgVHoneyPg44" />
+
+    <ImageView
+        android:id="@+id/ImgVHoneyPg44"
+        android:layout_width="359dp"
+        android:layout_height="409dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lb_savePg"
+        app:srcCompat="@drawable/honey_big" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

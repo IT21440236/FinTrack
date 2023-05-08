@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/etKidNameD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Kid Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/etKidAgeD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Kid Age"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/etKidGradeD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Kid Grade"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/etKidSchoolD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Kid School"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/btnUpdateDataDU"
+        android:layout_width="161dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_add_bg_colour"
+        android:text="Update Data" />
+
+</LinearLayout>

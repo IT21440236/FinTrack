@@ -11,9 +11,9 @@
 
                 </shape>
             </item>
-            <item>
-                <bitmap android:src="@drawable/dropdown" android:gravity="center|end" />
-            </item>
+<!--            <item>-->
+<!--                <bitmap android:src="@drawable/dropdown" android:gravity="center|end" />-->
+<!--            </item>-->
         </layer-list>
     </item>
 </selector>

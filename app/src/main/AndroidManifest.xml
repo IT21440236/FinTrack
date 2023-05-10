@@ -243,6 +243,7 @@
 <!--                <category android:name="android.intent.category.LAUNCHER" />-->
 <!--            </intent-filter>-->
 <!--        </activity>-->
+<!--        Yeran Wallet-->
         <activity
             android:name=".activities.WalletActivity"
             android:exported="true">

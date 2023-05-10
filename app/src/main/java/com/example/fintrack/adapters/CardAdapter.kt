@@ -4,20 +4,29 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fintrack.R
 import com.example.fintrack.models.CardModel
 
-class CardAdapter(private val cardList: ArrayList<CardModel>):
-        RecyclerView.Adapter<CardAdapter.ViewHolder>(){
+
+class CardAdapter(private val cardList: ArrayList<CardModel>) :
+    RecyclerView.Adapter<CardAdapter.ViewHolder>() {
     private lateinit var mListener: onItemClickListener
 
-    interface onItemClickListener{
+    interface onItemClickListener {
         fun onItemClick(position: Int)
     }
 
-    fun setOnItemClickListener(clickListener: onItemClickListener){
+    fun setOnItemClickListener(clickListener: onItemClickListener) {
         mListener = clickListener
+    }
+
+    fun submitList(list: List<CardModel>) {
+        cardList.clear()
+        cardList.addAll(list)
+        notifyDataSetChanged()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -36,7 +45,7 @@ class CardAdapter(private val cardList: ArrayList<CardModel>):
 
     class ViewHolder(itemView: View, clickListener: onItemClickListener) : RecyclerView.ViewHolder(itemView) {
 
-        val tvCardNo : TextView = itemView.findViewById(R.id.tvCardNo)
+        val tvCardNo: TextView = itemView.findViewById(R.id.tvCardNo)
 
         init {
             itemView.setOnClickListener {
@@ -46,3 +55,5 @@ class CardAdapter(private val cardList: ArrayList<CardModel>):
 
     }
 }
+
+

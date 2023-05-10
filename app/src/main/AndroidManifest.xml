@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,7 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinTrack"
         tools:targetApi="31">
-<!--        Bhanuka-->
+
+        <!-- Bhanuka -->
         <activity
             android:name=".activities.EditProfile"
             android:exported="false">
@@ -54,20 +58,20 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity
-            android:name=".activities.UserActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
 <!--        <activity-->
-<!--            android:name=".activities.MainActivity"-->
+<!--            android:name=".activities.UserActivity"-->
 <!--            android:exported="false">-->
 <!--            <meta-data-->
 <!--                android:name="android.app.lib_name"-->
 <!--                android:value="" />-->
 <!--        </activity>-->
+         <activity
+         android:name=".activities.MainActivity"
+         android:exported="false">
+         <meta-data
+         android:name="android.app.lib_name"
+         android:value="" />
+         </activity>
         <activity
             android:name=".activities.SignInActivity"
             android:exported="false">
@@ -75,65 +79,62 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity
-            android:name=".activities.SignUpActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-<!--        Bhanuka-->
-
-<!--        Yasitha-->
-        <activity
-            android:name=".Homepage"
-            android:exported="false" />
-        <activity
-            android:name=".AddSubscription"
-            android:exported="false" />
-        <activity
-            android:name=".activities.UpdateExpense"
-            android:exported="false" />
-        <activity
-            android:name=".activities.UpdateIncome"
-            android:exported="false" />
-        <activity
-            android:name=".activities.SelectBudget"
-            android:exported="false" />
-        <activity
-            android:name=".activities.AddExpense"
-            android:exported="false" />
-        <activity
-            android:name=".activities.NewBudget"
-            android:exported="false" />
-        <activity
-            android:name=".activities.AddIncome"
-            android:exported="false" />
-        <activity
-            android:name=".activities.Expense"
-            android:exported="false" />
 <!--        <activity-->
-<!--            android:name=".activities.MainActivity"-->
-<!--            android:exported="false" />-->
-        <activity
-            android:name=".Subscriptions"
-            android:exported="false" />
-        <activity
-            android:name=".UpdateSubscription"
-            android:exported="false" />
-        <activity
-            android:name=".activities.Income"
-            android:exported="false" />
-<!--        Yasitha-->
+<!--            android:name=".activities.SignUpActivity"-->
+<!--            android:exported="false">-->
+<!--            <meta-data-->
+<!--                android:name="android.app.lib_name"-->
+<!--                android:value="" />-->
+<!--        </activity>-->
+        <!-- Bhanuka -->
 
-<!--        Wasana-->
-        <activity
-            android:name=".activities.KidsReport"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+        <!-- Yasitha -->
+
+<!--        <activity-->
+<!--            android:name=".AddSubscription"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".activities.UpdateExpense"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".activities.UpdateIncome"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".activities.SelectBudget"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".activities.AddExpense"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".activities.NewBudget"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".activities.AddIncome"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".activities.Expense"-->
+<!--            android:exported="false" /> &lt;!&ndash; <activity &ndash;&gt;-->
+        <!-- android:name=".activities.MainActivity" -->
+        <!-- android:exported="false" /> -->
+<!--        <activity-->
+<!--            android:name=".Subscriptions"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".UpdateSubscription"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".activities.Income"-->
+<!--            android:exported="false" /> -->
+        <!-- Yasitha -->
+
+        <!-- Wasana -->
+<!--        <activity-->
+<!--            android:name=".activities.KidsReport"-->
+<!--            android:exported="false">-->
+<!--            <meta-data-->
+<!--                android:name="android.app.lib_name"-->
+<!--                android:value="" />-->
+<!--        </activity>-->
         <activity
             android:name=".activities.KidsLogin"
             android:exported="false">
@@ -141,7 +142,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name=".activities.KidsBalance"
             android:exported="false">
@@ -156,13 +156,13 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity
-            android:name=".activities.KidsAmount"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+<!--        <activity-->
+<!--            android:name=".activities.KidsAmount"-->
+<!--            android:exported="false">-->
+<!--            <meta-data-->
+<!--                android:name="android.app.lib_name"-->
+<!--                android:value="" />-->
+<!--        </activity>-->
         <activity
             android:name=".activities.KidsSpendAmountBalance"
             android:exported="false">
@@ -184,13 +184,13 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity
-            android:name=".activities.AddKid"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+<!--        <activity-->
+<!--            android:name=".activities.AddKid"-->
+<!--            android:exported="false">-->
+<!--            <meta-data-->
+<!--                android:name="android.app.lib_name"-->
+<!--                android:value="" />-->
+<!--        </activity>-->
         <activity
             android:name=".activities.FetchingActivityUser"
             android:exported="false">
@@ -212,16 +212,13 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
-        <activity
-            android:name=".activities.MainActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-<!--        Wasana-->
-
+<!--        <activity-->
+<!--            android:name=".activities.MainActivity"-->
+<!--            android:exported="false">-->
+<!--            <meta-data-->
+<!--                android:name="android.app.lib_name"-->
+<!--                android:value="" />-->
+<!--        </activity> &lt;!&ndash; Wasana &ndash;&gt;-->
         <activity
             android:name=".activities.CardDetailsActivity"
             android:exported="false" />
@@ -234,11 +231,20 @@
         <activity
             android:name=".activities.AddCardActivity"
             android:exported="false" />
-         <activity
-         android:name=".activities.MainActivityPg7"
-         android:exported="false" />
         <activity
-            android:name=".activities.WalletActivity"
+            android:name=".activities.MainActivityPg7"
+            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".activities.WalletActivity"-->
+<!--            android:exported="true">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+        <activity
+            android:name=".activities.UserActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -246,6 +252,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <service
             android:name=".activities.MyFirebaseMessagingService"
             android:exported="false">
@@ -254,8 +261,5 @@
             </intent-filter>
         </service>
     </application>
-
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
 </manifest>

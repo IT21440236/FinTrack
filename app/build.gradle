@@ -45,6 +45,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'com.google.firebase:firebase-messaging-ktx:23.0.3'
+    implementation 'com.google.firebase:firebase-auth-ktx:21.0.3'
 //    implementation 'androidx.core:core-ktx:+'
 //    implementation 'androidx.core:core-ktx:+'
     testImplementation 'junit:junit:4.13.2'
@@ -73,9 +74,8 @@ dependencies {
     //firebase push notifications
     implementation 'com.google.firebase:firebase-messaging:22.0.0'
 
-    // Add the dependency for the Firebase Authentication library
-    // When using the BoM, you don't specify versions in Firebase library dependencies
-    implementation 'com.google.firebase:firebase-auth-ktx'
+
+
 
 
 

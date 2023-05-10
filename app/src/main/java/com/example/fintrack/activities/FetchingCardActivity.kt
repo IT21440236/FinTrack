@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageButton
+import android.widget.SearchView
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -17,11 +18,14 @@ class FetchingCardActivity : AppCompatActivity() {
 
     private lateinit var cardRecyclerView: RecyclerView
     private lateinit var tvLoadingData: TextView
-    private lateinit var cardList: ArrayList<CardModel>
+    private lateinit var cardList: MutableList<CardModel>
     private lateinit var dbRef: DatabaseReference
 
     //Menubar
     private lateinit var ibWallet: ImageButton
+
+    //SearchView
+    private lateinit var searchView: SearchView
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,6 +37,19 @@ class FetchingCardActivity : AppCompatActivity() {
         cardRecyclerView.setHasFixedSize(true)
         tvLoadingData = findViewById(R.id.tvLoadingData)
 
+        searchView = findViewById(R.id.SVCards)
+        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                return false
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                filter(newText)
+                cardRecyclerView.adapter?.notifyDataSetChanged()
+                return true
+            }
+        })
+
         ibWallet = findViewById(R.id.ibWallet)
 
         ibWallet.setOnClickListener {
@@ -40,12 +57,24 @@ class FetchingCardActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        cardList = arrayListOf<CardModel>()
+        cardList = mutableListOf()
 
         getCardData()
     }
 
-    private  fun getCardData(){
+    private fun filter(text: String?) {
+        text?.let {
+            val filteredList = cardList.filter { card ->
+                card.cardNo!!.contains(text, ignoreCase = true)
+            }.toMutableList()
+            (cardRecyclerView.adapter as CardAdapter).submitList(filteredList)
+        } ?: run {
+            getCardData()
+        }
+    }
+
+
+    private fun getCardData(){
         cardRecyclerView.visibility = View.GONE
         tvLoadingData.visibility = View.VISIBLE
 
@@ -57,9 +86,9 @@ class FetchingCardActivity : AppCompatActivity() {
                 if (snapshot.exists()){
                     for (cardSnap in snapshot.children){
                         val cardData = cardSnap.getValue(CardModel::class.java)
-                        cardList.add(cardData!!)
+                        cardData?.let { cardList.add(it) }
                     }
-                    val cAdapter = CardAdapter(cardList)
+                    val cAdapter = CardAdapter(cardList as ArrayList<CardModel>)
                     cardRecyclerView.adapter = cAdapter
 
                     cAdapter.setOnItemClickListener(object : CardAdapter.onItemClickListener{
@@ -78,15 +107,12 @@ class FetchingCardActivity : AppCompatActivity() {
 
                     cardRecyclerView.visibility = View.VISIBLE
                     tvLoadingData.visibility = View.GONE
-
-
                 }
             }
 
             override fun onCancelled(error: DatabaseError) {
-                TODO("Not yet implemented")
+                // Handle error
             }
-
         })
     }
 }

@@ -129,7 +129,7 @@
         <item>Card **8833</item>
     </string-array>
 
-<!--    Yasitha-->
+    <!--    Yasitha-->
     <string name="lb_newbudget">New Budget</string>
     <string name="lb_current_budget">Current Budget</string>
     <string name="lb_expenses">Expenses</string>
@@ -214,7 +214,6 @@
     </string-array>
 
 
-
     <string name="lb_hint_subname">Name</string>
     <string name="lb_hint_subcategory">category</string>
     <string name="lb_hint_subpayment">Payment</string>
@@ -225,9 +224,9 @@
     <string name="lb_hint_sub1net">Netflix</string>
     <string name="lb_hint_sub2spot">Spotify</string>
     <string name="lb_loading">Loading.....</string>
-<!--    Yasitha-->
+    <!--    Yasitha-->
 
-<!--    wasana-->
+    <!--    wasana-->
     <string name="lb_spend">Spend</string>
     <string name="lb_save">Save</string>
     <string name="hint_amount">Amount</string>
@@ -282,7 +281,7 @@
     <string name="company_name">Maga</string>
     <string name="e_mail_niko">Nicholas Perera</string>
     <string name="hi_greeting">Hi! Brian</string>
-<!--    wasana-->
+    <!--    wasana-->
 
 
 </resources>

@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -33,9 +34,8 @@ class WalletActivity : AppCompatActivity() {
     private lateinit var imgVCalculator: ImageView
     private lateinit var tvCalculator: TextView
 
-
-
-
+    //Menubar
+    private lateinit var btnHomeAP: ImageButton
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -57,6 +57,8 @@ class WalletActivity : AppCompatActivity() {
         imgVCalculator = findViewById(R.id.imgVCalculator)
         tvCalculator = findViewById(R.id.tvCalculator)
 
+        //menubar
+        btnHomeAP = findViewById(R.id.btnHomeAP)
 
 
 
@@ -112,5 +114,11 @@ class WalletActivity : AppCompatActivity() {
             val intent = Intent(this, CalculatorActivity::class.java)
             startActivity(intent)
         }
+
+        ///menubar
+//        btnHomeAP.setOnClickListener {
+//            val intent = Intent(this, ActivityHome::class.java)
+//            startActivity(intent)
+//        }
     }//end of onCreate
 }//end of WalletActivity

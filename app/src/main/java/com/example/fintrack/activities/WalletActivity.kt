@@ -36,6 +36,7 @@ class WalletActivity : AppCompatActivity() {
 
     //Menubar
     private lateinit var btnHomeAP: ImageButton
+    private lateinit var btnUserAP: ImageButton
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -59,6 +60,7 @@ class WalletActivity : AppCompatActivity() {
 
         //menubar
         btnHomeAP = findViewById(R.id.btnHomeAP)
+        btnUserAP = findViewById(R.id.btnUserAP)
 
 
 
@@ -116,6 +118,10 @@ class WalletActivity : AppCompatActivity() {
         }
 
         ///menubar
+        btnUserAP.setOnClickListener {
+            val intent = Intent(this, UserActivity::class.java)
+            startActivity(intent)
+        }
 //        btnHomeAP.setOnClickListener {
 //            val intent = Intent(this, ActivityHome::class.java)
 //            startActivity(intent)

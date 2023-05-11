@@ -267,7 +267,7 @@
             app:srcCompat="@drawable/blue_wallet" />
 
         <ImageButton
-            android:id="@+id/imageButton6"
+            android:id="@+id/ibUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"

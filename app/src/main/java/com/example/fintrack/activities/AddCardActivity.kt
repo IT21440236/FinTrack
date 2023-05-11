@@ -45,6 +45,8 @@ class AddCardActivity : AppCompatActivity() {
 
     //Menu bar
     private lateinit var ibWallet : ImageButton
+    private lateinit var ibUser: ImageButton
+
 
     private lateinit var dbRef: DatabaseReference
 
@@ -61,7 +63,9 @@ class AddCardActivity : AppCompatActivity() {
         etCVV = findViewById(R.id.etCVV)
         btnAdd = findViewById(R.id.btnAdd)
 
+        //menubar
         ibWallet = findViewById(R.id.ibWallet)
+        ibUser = findViewById(R.id.ibUser)
 
         dbRef = FirebaseDatabase.getInstance().getReference("Cards")
 
@@ -78,8 +82,13 @@ class AddCardActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        //menubar
         ibWallet.setOnClickListener {
             val intent = Intent(this, WalletActivity::class.java)
+            startActivity(intent)
+        }
+        ibUser.setOnClickListener {
+            val intent = Intent(this, UserActivity::class.java)
             startActivity(intent)
         }
 

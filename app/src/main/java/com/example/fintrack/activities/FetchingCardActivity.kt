@@ -23,6 +23,7 @@ class FetchingCardActivity : AppCompatActivity() {
 
     //Menubar
     private lateinit var ibWallet: ImageButton
+    private lateinit var ibUser: ImageButton
 
     //SearchView
     private lateinit var searchView: SearchView
@@ -37,6 +38,8 @@ class FetchingCardActivity : AppCompatActivity() {
         cardRecyclerView.setHasFixedSize(true)
         tvLoadingData = findViewById(R.id.tvLoadingData)
 
+
+
         searchView = findViewById(R.id.SVCards)
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
@@ -49,11 +52,17 @@ class FetchingCardActivity : AppCompatActivity() {
                 return true
             }
         })
-
+        //menubar
         ibWallet = findViewById(R.id.ibWallet)
+        ibUser = findViewById(R.id.ibUser)
 
         ibWallet.setOnClickListener {
             val intent = Intent(this, WalletActivity::class.java)
+            startActivity(intent)
+        }
+
+        ibUser.setOnClickListener {
+            val intent = Intent(this, UserActivity::class.java)
             startActivity(intent)
         }
 

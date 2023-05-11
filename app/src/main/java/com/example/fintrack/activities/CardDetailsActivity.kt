@@ -55,9 +55,18 @@ class CardDetailsActivity : AppCompatActivity() {
         btnUpdate.setOnClickListener {
             openUpdateDialog(
                 intent.getStringExtra("cardId").toString(),
-                intent.getStringExtra("cardNo").toString()
+                tvCardNo.text.toString(),
+                tvCardName.text.toString(),
+                tvCardExpiryDate.text.toString(),
+                tvCardCVV.text.toString()
             )
         }
+//        btnUpdate.setOnClickListener {
+//            openUpdateDialog(
+//                intent.getStringExtra("cardId").toString(),
+//                intent.getStringExtra("cardNo").toString()
+//            )
+//        }
 
         btnDelete.setOnClickListener {
             deleteRecord(
@@ -106,12 +115,14 @@ class CardDetailsActivity : AppCompatActivity() {
 
     private fun openUpdateDialog(
         cardId: String,
-        cardNo: String
-    ){
-
+        cardNo: String,
+        cardName: String,
+        cardExpiryDate: String,
+        cardCVV: String
+    ) {
         val mDialog = AlertDialog.Builder(this)
         val inflater = layoutInflater
-        val mDialogView = inflater.inflate(R.layout.update_dialog,null)
+        val mDialogView = inflater.inflate(R.layout.update_dialog, null)
 
         mDialog.setView(mDialogView)
 
@@ -121,10 +132,11 @@ class CardDetailsActivity : AppCompatActivity() {
         val etCardCVV = mDialogView.findViewById<EditText>(R.id.etCardCVV)
         val btnUpdateData = mDialogView.findViewById<Button>(R.id.btnUpdateData)
 
-        etCardNo.setText(intent.getStringExtra("cardNo").toString())
-        etCardName.setText(intent.getStringExtra("cardName").toString())
-        etCardExpiryDate.setText(intent.getStringExtra("cardExpiryDate").toString())
-        etCardCVV.setText(intent.getStringExtra("cardCVV").toString())
+        // set the text of the EditText fields to the updated values
+        etCardNo.setText(cardNo)
+        etCardName.setText(cardName)
+        etCardExpiryDate.setText(cardExpiryDate)
+        etCardCVV.setText(cardCVV)
 
         mDialog.setTitle("Updating $cardNo")
 
@@ -138,10 +150,9 @@ class CardDetailsActivity : AppCompatActivity() {
                 etCardName.text.toString(),
                 etCardExpiryDate.text.toString(),
                 etCardCVV.text.toString()
-
             )
 
-            Toast.makeText(applicationContext,"Card Data Updated", Toast.LENGTH_LONG).show()
+            Toast.makeText(applicationContext, "Card Data Updated", Toast.LENGTH_LONG).show()
 
             //We are setting updated data to our textviews
             tvCardNo.text = etCardNo.text.toString()
@@ -152,6 +163,7 @@ class CardDetailsActivity : AppCompatActivity() {
             alertDialog.dismiss()
         }
     }
+
 
     private fun updateCardData(
         id:String,

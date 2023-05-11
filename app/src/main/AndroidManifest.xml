@@ -58,13 +58,13 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-<!--        <activity-->
-<!--            android:name=".activities.UserActivity"-->
-<!--            android:exported="false">-->
-<!--            <meta-data-->
-<!--                android:name="android.app.lib_name"-->
-<!--                android:value="" />-->
-<!--        </activity>-->
+        <activity
+            android:name=".activities.UserActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
          <activity
          android:name=".activities.MainActivity"
          android:exported="false">
@@ -79,13 +79,13 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-<!--        <activity-->
-<!--            android:name=".activities.SignUpActivity"-->
-<!--            android:exported="false">-->
-<!--            <meta-data-->
-<!--                android:name="android.app.lib_name"-->
-<!--                android:value="" />-->
-<!--        </activity>-->
+        <activity
+            android:name=".activities.SignUpActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <!-- Bhanuka -->
 
         <!-- Yasitha -->
@@ -128,13 +128,13 @@
         <!-- Yasitha -->
 
         <!-- Wasana -->
-<!--        <activity-->
-<!--            android:name=".activities.KidsReport"-->
-<!--            android:exported="false">-->
-<!--            <meta-data-->
-<!--                android:name="android.app.lib_name"-->
-<!--                android:value="" />-->
-<!--        </activity>-->
+        <activity
+            android:name=".activities.KidsReport"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".activities.KidsLogin"
             android:exported="false">
@@ -156,13 +156,13 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-<!--        <activity-->
-<!--            android:name=".activities.KidsAmount"-->
-<!--            android:exported="false">-->
-<!--            <meta-data-->
-<!--                android:name="android.app.lib_name"-->
-<!--                android:value="" />-->
-<!--        </activity>-->
+        <activity
+            android:name=".activities.KidsAmount"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".activities.KidsSpendAmountBalance"
             android:exported="false">
@@ -184,13 +184,13 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-<!--        <activity-->
-<!--            android:name=".activities.AddKid"-->
-<!--            android:exported="false">-->
-<!--            <meta-data-->
-<!--                android:name="android.app.lib_name"-->
-<!--                android:value="" />-->
-<!--        </activity>-->
+        <activity
+            android:name=".activities.AddKid"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".activities.FetchingActivityUser"
             android:exported="false">
@@ -234,16 +234,9 @@
         <activity
             android:name=".activities.MainActivityPg7"
             android:exported="false" />
-<!--        <activity-->
-<!--            android:name=".activities.WalletActivity"-->
-<!--            android:exported="true">-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-<!--        </activity>-->
-<!--        Yeran Wallet startintent-->
+
+<!--        Start-up Activity-->
         <activity
             android:name=".activities.WalletActivity"
             android:exported="true">
@@ -254,6 +247,10 @@
             </intent-filter>
         </activity>
 
+
+
+
+<!--        Cloud messaging-->
         <service
             android:name=".activities.MyFirebaseMessagingService"
             android:exported="false">

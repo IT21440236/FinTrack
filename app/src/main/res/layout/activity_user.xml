@@ -248,7 +248,7 @@
                 app:layout_constraintVertical_bias="0.483" />
 
             <ImageButton
-                android:id="@+id/imageButton6"
+                android:id="@+id/ibUser"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#ffff"

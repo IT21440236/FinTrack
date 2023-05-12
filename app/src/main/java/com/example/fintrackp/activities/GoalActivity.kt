@@ -45,7 +45,7 @@ class GoalActivity : AppCompatActivity() {
 
         searchView = findViewById(R.id.searchViewGP)
 
-        etAmount = findViewById(R.id.etGoalAmount)
+        //etAmount = findViewById(R.id.etGoalAmount)
         btnCheck = findViewById(R.id.btnCheck)
 
         plusbtn.setOnClickListener {
@@ -94,20 +94,21 @@ class GoalActivity : AppCompatActivity() {
 
 
         btnCheck.setOnClickListener {
-            val res1 = etAmount.text.toString().toInt()
-
-            decrease(75000, res1)
+//            val res1 = etAmount.text.toString().toInt()
+//
+//            decrease(75000, res1)
+            startActivity(Intent(this@GoalActivity, GoalReco::class.java))
         }
 
 
 
     }
 
-    private fun decrease(res1 : Int, res2 : Int){
-        val result = res1 - res2
-
-        Toast.makeText(this, "Remain amount Rs.${result} ", Toast.LENGTH_LONG).show()
-    }
+//    private fun decrease(res1 : Int, res2 : Int){
+//        val result = res1 - res2
+//
+//        Toast.makeText(this, "Remain amount Rs.${result} ", Toast.LENGTH_LONG).show()
+//    }
 
 //    private fun filterList(query: String?){
 ////        if(query != null){

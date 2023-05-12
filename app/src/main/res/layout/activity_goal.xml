@@ -43,7 +43,7 @@
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="530dp"
         android:layout_marginTop="60dp"
         android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
@@ -179,8 +179,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_width="354dp"
-        android:layout_height="125dp"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/background_btn_white"
         android:elevation="3dp"
@@ -190,32 +190,17 @@
         app:layout_constraintTop_toBottomOf="@+id/lbHeaderUGP"
         tools:ignore="MissingConstraints">
 
-
-        <EditText
-            android:id="@+id/etGoalAmount"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/edittext_background"
-            android:ems="10"
-            android:hint="Enter Goal Amount"
-            android:inputType="textPersonName"
-            android:padding="5dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <Button
             android:id="@+id/btnCheck"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/background_visa"
-            android:text="Button"
+            android:text="Recommendation"
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etGoalAmount" />
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

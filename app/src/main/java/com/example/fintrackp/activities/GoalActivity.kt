@@ -30,7 +30,7 @@ class GoalActivity : AppCompatActivity() {
 
     private lateinit var searchView: SearchView
 
-    private lateinit var adapter: GoalAdapter
+    //private lateinit var adapter: GoalAdapter
     //private var amount:Double = 0.0
 
     private lateinit var etAmount :EditText
@@ -61,7 +61,7 @@ class GoalActivity : AppCompatActivity() {
         //getGoalData()
 
 
-        adapter = GoalAdapter(goalList)
+        //adapter = GoalAdapter(goalList)
         //goalRecyclerView.adapter = adapter
 
 //        getGoalData()
@@ -69,7 +69,7 @@ class GoalActivity : AppCompatActivity() {
         //goalList = arrayListOf<GoalModel>()
 
 
-        getGoalData()
+//        getGoalData()
 
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener{
             override fun onQueryTextSubmit(query: String?): Boolean {
@@ -77,14 +77,19 @@ class GoalActivity : AppCompatActivity() {
             }
 
             override fun onQueryTextChange(newText: String?): Boolean {
-                if (newText != null) {
-                    filterList(newText.toLowerCase(Locale.getDefault()))
-                }
-                //filterList(newText)
+//                if (newText != null) {
+//                    filterList(newText.toLowerCase(Locale.getDefault()))
+//                }
+//                //filterList(newText)
+//                return true
+                filter(newText)
+                goalRecyclerView.adapter?.notifyDataSetChanged()
                 return true
             }
 
         })
+
+        getGoalData()
 
 
 
@@ -104,59 +109,70 @@ class GoalActivity : AppCompatActivity() {
         Toast.makeText(this, "Remain amount Rs.${result} ", Toast.LENGTH_LONG).show()
     }
 
-    private fun filterList(query: String?){
-//        if(query != null){
+//    private fun filterList(query: String?){
+////        if(query != null){
+////            val filteredList = ArrayList<GoalModel>()
+////            for(i in goalList){
+////                if(i.financialGoal!!.lowercase().contains(query)){
+////                    filteredList.add(i)
+////                }
+////            }
+////
+////            if(filteredList.isEmpty()){
+////                Toast.makeText(this, "No data found", Toast.LENGTH_SHORT).show()
+////            }else{
+////                adapter.setFilteredList(filteredList)
+//////                val mAdapter = GoalAdapter(filteredList)
+//////                goalRecyclerView.adapter = mAdapter
+////
+////            }
+////        }
+//
+//        if(query != null) {
 //            val filteredList = ArrayList<GoalModel>()
-//            for(i in goalList){
-//                if(i.financialGoal!!.lowercase().contains(query)){
-//                    filteredList.add(i)
+//            for (item in goalList) {
+//                if (item.financialGoal?.toLowerCase(Locale.getDefault())?.contains(query) == true) {
+//                    filteredList.add(item)
 //                }
 //            }
-//
-//            if(filteredList.isEmpty()){
-//                Toast.makeText(this, "No data found", Toast.LENGTH_SHORT).show()
-//            }else{
+//            if (filteredList.isNotEmpty()) {
 //                adapter.setFilteredList(filteredList)
-////                val mAdapter = GoalAdapter(filteredList)
-////                goalRecyclerView.adapter = mAdapter
-//
+//            } else {
+//                adapter.setFilteredList(goalList)
+//                Toast.makeText(this, "No data found", Toast.LENGTH_SHORT).show()
 //            }
 //        }
+//
+//
+//
+//
+////        val filterList = ArrayList<GoalModel>()
+////
+////        if(!query.isNullOrBlank()){
+////            val searchQuery = query.toLowerCase(Locale.ROOT).trim()
+////
+////            for(goal in goalList){
+////                if(goal.financialGoal!!.toLowerCase(Locale.ROOT).contains(searchQuery)){
+////                    filterList.add(goal)
+////                }
+////            }
+////        }else{
+////            filterList.addAll(goalList)
+////        }
+////
+////        val mAdapter = GoalAdapter(filterList)
+////        goalRecyclerView.adapter = mAdapter
+//    }
 
-        if(query != null) {
-            val filteredList = ArrayList<GoalModel>()
-            for (item in goalList) {
-                if (item.financialGoal?.toLowerCase(Locale.getDefault())?.contains(query) == true) {
-                    filteredList.add(item)
-                }
-            }
-            if (filteredList.isNotEmpty()) {
-                adapter.setFilteredList(filteredList)
-            } else {
-                adapter.setFilteredList(goalList)
-                Toast.makeText(this, "No data found", Toast.LENGTH_SHORT).show()
-            }
+    private fun filter(text:String?){
+        text?.let{
+            val filteredList=goalList.filter { goal->
+                goal.financialGoal!!.contains(text,ignoreCase = true)
+            }.toMutableList()
+            (goalRecyclerView.adapter as GoalAdapter).submitList(filteredList)
+        }?: run{
+            getGoalData()
         }
-
-
-
-
-//        val filterList = ArrayList<GoalModel>()
-//
-//        if(!query.isNullOrBlank()){
-//            val searchQuery = query.toLowerCase(Locale.ROOT).trim()
-//
-//            for(goal in goalList){
-//                if(goal.financialGoal!!.toLowerCase(Locale.ROOT).contains(searchQuery)){
-//                    filterList.add(goal)
-//                }
-//            }
-//        }else{
-//            filterList.addAll(goalList)
-//        }
-//
-//        val mAdapter = GoalAdapter(filterList)
-//        goalRecyclerView.adapter = mAdapter
     }
 
     private fun getGoalData(){

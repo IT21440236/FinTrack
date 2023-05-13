@@ -157,7 +157,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".activities.KidsAmount"
+            android:name=".activities.WalletActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -214,7 +214,7 @@
         </activity>
 
         <activity
-            android:name=".activities.MainActivity"
+            android:name=".activities.KidsAmount"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -238,7 +238,7 @@
          android:name=".activities.MainActivityPg7"
          android:exported="false" />
         <activity
-            android:name=".activities.WalletActivity"
+            android:name=".activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

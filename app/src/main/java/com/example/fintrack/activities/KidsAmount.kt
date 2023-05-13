@@ -3,7 +3,8 @@ package com.example.fintrack.activities
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
-import com.example.projecttest.R
+import com.example.fintrack.R
+//import com.example.projecttest.R
 
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase

@@ -17,7 +17,7 @@ import com.example.fintrack.adapters.IncAdapter
 import com.example.fintrack.models.ExpenseModel
 import com.example.fintrack.models.IncomeModel
 import com.google.firebase.database.*
-import kotlinx.android.synthetic.main.activity_income.*
+//import kotlinx.android.synthetic.main.activity_income.*
 
 class Income : AppCompatActivity() {
 

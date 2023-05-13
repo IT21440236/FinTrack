@@ -50,10 +50,10 @@ class AddUser : AppCompatActivity() {
             edt_unPg31.error = "please enter name"
         }
 
-        if(memEmail.isEmpty()|| !isValidEmail(memEmail)) {
-            edt_mailPg31.error = "please enter a valid email"
-            return
-        }
+//        if(memEmail.isEmpty()|| !isValidEmail(memEmail)) {
+//            edt_mailPg31.error = "please enter a valid email"
+//            return
+//        }
 
         if(memOcc.isEmpty()) {
             edt_occPg31.error = "please enter occupation"
@@ -81,7 +81,7 @@ class AddUser : AppCompatActivity() {
             }
     }
 
-    private fun isValidEmail(email: CharSequence): Boolean {
-        return android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()
-    }
+//    private fun isValidEmail(email: CharSequence): Boolean {
+//        return android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()
+//    }
 }

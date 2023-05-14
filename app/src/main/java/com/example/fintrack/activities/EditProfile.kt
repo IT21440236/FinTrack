@@ -20,6 +20,10 @@ class EditProfile : AppCompatActivity() {
     private lateinit var etNIC: EditText
     private lateinit var btnUpdate: Button
     //private lateinit var btnDelete: Button
+    
+    btnBack=findViewById<ImageView>(R.id.btnBackAP)
+    
+    private lateinit var btnBack: ImageView
 
     private  lateinit var firebaseAuth: FirebaseAuth
     var databaseReference :  DatabaseReference? = null
@@ -36,6 +40,8 @@ class EditProfile : AppCompatActivity() {
         etNIC = findViewById(R.id.etNicEP)
         btnUpdate = findViewById(R.id.btnUpdateEP)
         //btnDelete = findViewById(R.id.btnDeleteEP)
+        
+        btnBack=findViewById<ImageView>(R.id.btnBackAP)
 
         firebaseAuth = FirebaseAuth.getInstance()
 
@@ -52,10 +58,15 @@ class EditProfile : AppCompatActivity() {
                 etNIC.text.toString()
             )
         }
+        
+        btnBack.setOnClickListener {
+            startActivity(Intent(this@EditProfile, UserActivity::class.java))
+        }
 
 
     }
 
+    //set values to fields
     private fun setValuesToViews(){
         val user = firebaseAuth.currentUser
         val userreference = databaseReference?.child(user?.uid!!)
@@ -78,6 +89,7 @@ class EditProfile : AppCompatActivity() {
         })
     }
 
+    //update form data
     private fun updateProfile(
         name:String,
         email:String,

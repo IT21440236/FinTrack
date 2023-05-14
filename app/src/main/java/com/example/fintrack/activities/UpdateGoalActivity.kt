@@ -19,6 +19,8 @@ class UpdateGoalActivity : AppCompatActivity() {
     private lateinit var tvAmount: TextView
     private lateinit var btnUpdate:Button
     private lateinit var btnDelete:Button
+    
+    private lateinit var btnBack: ImageView
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,6 +32,8 @@ class UpdateGoalActivity : AppCompatActivity() {
         tvAmount = findViewById(R.id.etAmountUGP)
         btnUpdate = findViewById(R.id.button1)
         btnDelete = findViewById(R.id.btnAddAP)
+        
+        btnBack=findViewById<ImageView>(R.id.btnBackAP)
 
         setValuesToViews()
 
@@ -46,6 +50,10 @@ class UpdateGoalActivity : AppCompatActivity() {
             deleteGoalRecord(
                 intent.getStringExtra("goalId").toString()
             )
+        }
+        
+        btnBack.setOnClickListener {
+            startActivity(Intent(this@UpdateGoalActivity, GoalActivity::class.java))
         }
 
     }

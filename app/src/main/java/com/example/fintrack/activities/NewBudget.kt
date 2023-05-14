@@ -33,6 +33,30 @@ class NewBudget : AppCompatActivity() {
             val intent= Intent(this, SelectBudget::class.java)
             startActivity(intent)
         }
+        
+        val imgHomeiconNB = findViewById<ImageView>(R.id.imgHomeiconNB)
+
+
+        imgHomeiconNB.setOnClickListener{
+            val intent=Intent(this, Home::class.java)
+            startActivity(intent)
+        }
+
+        val imgWalleticonNB = findViewById<ImageView>(R.id.imgWalleticonNB)
+
+
+        imgWalleticonNB.setOnClickListener{
+            val intent=Intent(this, WalletActivity::class.java)
+            startActivity(intent)
+        }
+
+        val imgUsericonNB = findViewById<ImageView>(R.id.imgUsericonNB)
+
+
+        imgUsericonNB.setOnClickListener{
+            val intent=Intent(this, UserActivity::class.java)
+            startActivity(intent)
+        }
 
         /////mod
 //        expenseValue = intent.getStringExtra("expenseValue")

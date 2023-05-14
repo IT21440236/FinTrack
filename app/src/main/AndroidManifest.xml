@@ -88,44 +88,40 @@
         </activity>
         <!-- Bhanuka -->
 
-        <!-- Yasitha -->
+        <!-- yasitha-->
 
-<!--        <activity-->
-<!--            android:name=".AddSubscription"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".activities.UpdateExpense"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".activities.UpdateIncome"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".activities.SelectBudget"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".activities.AddExpense"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".activities.NewBudget"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".activities.AddIncome"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".activities.Expense"-->
-<!--            android:exported="false" /> &lt;!&ndash; <activity &ndash;&gt;-->
-        <!-- android:name=".activities.MainActivity" -->
-        <!-- android:exported="false" /> -->
-<!--        <activity-->
-<!--            android:name=".Subscriptions"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".UpdateSubscription"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".activities.Income"-->
-<!--            android:exported="false" /> -->
-        <!-- Yasitha -->
+        <activity
+            android:name=".activities.Home"
+            android:exported="false" />
+        <activity
+            android:name=".activities.index"
+            android:exported="false" />
+        <activity
+            android:name=".activities.UpdateExpense"
+            android:exported="false" />
+        <activity
+            android:name=".activities.UpdateIncome"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SelectBudget"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AddExpense"
+            android:exported="false" />
+        <activity
+            android:name=".activities.NewBudget"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AddIncome"
+            android:exported="false" />
+        <activity
+            android:name=".activities.WalletActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Income"
+            android:exported="false"/>
+
+        <!-- yasitha-->
 
         <!-- Wasana -->
         <activity
@@ -238,7 +234,7 @@
 
 <!--        Start-up Activity-->
         <activity
-            android:name=".activities.WalletActivity"
+            android:name=".activities.Expense"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

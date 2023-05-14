@@ -131,6 +131,7 @@
 
     <!--    Yasitha-->
     <string name="lb_newbudget">New Budget</string>
+    <string name="btn_create_budget">Create Budget</string>
     <string name="lb_current_budget">Current Budget</string>
     <string name="lb_expenses">Expenses</string>
     <string name="lb_budget_card_expvalue">Rs 50,000</string>

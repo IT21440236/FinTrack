@@ -42,7 +42,6 @@
         android:fontFamily="@font/segoe_ui_bold"
         android:text="@string/lb_name"
         android:textColor="@color/black"
-        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/lbforegroundUIP"
         app:layout_constraintTop_toTopOf="@+id/lbforegroundUIP" />

@@ -4,10 +4,7 @@ import android.app.AlertDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import com.example.fintrack.R
 import com.example.fintrack.models.GoalModel
 import com.google.firebase.database.FirebaseDatabase

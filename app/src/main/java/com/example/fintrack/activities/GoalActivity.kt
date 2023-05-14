@@ -5,10 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -36,7 +33,7 @@ class GoalActivity : AppCompatActivity() {
     //private lateinit var etAmount :EditText
     private lateinit var btnCheck:Button
     //private lateinit var btnBack:Button
-    private lateinit var btnHome:ImageButton 
+    private lateinit var btnHome: ImageButton
     private lateinit var btnUser:ImageButton
     private lateinit var btnWallet:ImageButton
     private lateinit var btnBack:ImageView

@@ -94,7 +94,7 @@
             android:name=".activities.Home"
             android:exported="false" />
         <activity
-            android:name=".activities.index"
+            android:name=".activities.SelectBudget"
             android:exported="false" />
         <activity
             android:name=".activities.UpdateExpense"
@@ -103,7 +103,7 @@
             android:name=".activities.UpdateIncome"
             android:exported="false" />
         <activity
-            android:name=".activities.Expense"
+            android:name=".activities.index"
             android:exported="false" />
         <activity
             android:name=".activities.AddExpense"
@@ -234,7 +234,7 @@
 
 <!--        Start-up Activity-->
         <activity
-            android:name=".activities.SelectBudget"
+            android:name=".activities.Expense"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

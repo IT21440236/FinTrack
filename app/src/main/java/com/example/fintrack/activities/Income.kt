@@ -81,6 +81,14 @@ class Income : AppCompatActivity() {
             val intent=Intent(this, UserActivity::class.java)
             startActivity(intent)
         }
+        
+         val ivbackwaredIP = findViewById<ImageView>(R.id.ivbackwaredIP)
+
+
+        ivbackwaredIP.setOnClickListener{
+            val intent=Intent(this, Home::class.java)
+            startActivity(intent)
+        }
 
         val firebase : DatabaseReference = FirebaseDatabase.getInstance().getReference()
 

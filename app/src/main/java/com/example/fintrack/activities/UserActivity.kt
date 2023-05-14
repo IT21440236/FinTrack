@@ -18,6 +18,9 @@ class UserActivity : AppCompatActivity() {
 
     private lateinit var tvAnalytics:TextView
     private lateinit var btnEdit: Button
+    
+    private lateinit var btnUser: ImageButton
+    private lateinit var btnWallet: ImageButton
 
     private  lateinit var firebaseAuth: FirebaseAuth
     var databaseReference :  DatabaseReference? = null
@@ -33,6 +36,9 @@ class UserActivity : AppCompatActivity() {
         tvFeedback = findViewById(R.id.textView6)
         tvContactus = findViewById(R.id.textView11)
         btnEdit = findViewById(R.id.btnEditUP)
+        
+        btnUser=findViewById<ImageButton>(R.id.btnUserUP)
+        btnWallet=findViewById<ImageButton>(R.id.btnWalletUP)
 
         tvAnalytics = findViewById(R.id.textView5)
 
@@ -63,10 +69,19 @@ class UserActivity : AppCompatActivity() {
             startActivity(Intent(this@UserActivity, EditProfile::class.java))
             finish()
         }
+        
+        btnUser.setOnClickListener {
+            startActivity(Intent(this@UserActivity, UserActivity::class.java))
+        }
+
+        btnWallet.setOnClickListener {
+            startActivity(Intent(this@UserActivity, WalletActivity::class.java))
+        }
 
 
     }
 
+    //load profile
     private fun loadProfile(){
         val user = firebaseAuth.currentUser
         val userreference = databaseReference?.child(user?.uid!!)

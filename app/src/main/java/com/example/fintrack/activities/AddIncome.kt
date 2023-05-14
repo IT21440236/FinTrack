@@ -35,6 +35,29 @@ class AddIncome : AppCompatActivity() {
             val intent= Intent(this, Income::class.java)
             startActivity(intent)
         }
+        val imgHomeiconAI = findViewById<ImageView>(R.id.imgHomeiconAI)
+
+
+        imgHomeiconAI.setOnClickListener{
+            val intent=Intent(this, Home::class.java)
+            startActivity(intent)
+        }
+
+        val imgWalleticonAI = findViewById<ImageView>(R.id.imgWalleticonAI)
+
+
+        imgWalleticonAI.setOnClickListener{
+            val intent=Intent(this, WalletActivity::class.java)
+            startActivity(intent)
+        }
+
+        val imgUsericonAI = findViewById<ImageView>(R.id.imgUsericonAI)
+
+
+        imgUsericonAI.setOnClickListener{
+            val intent=Intent(this, UserActivity::class.java)
+            startActivity(intent)
+        }
 
 
         etnameAIP =  findViewById(R.id.etnameAIP)

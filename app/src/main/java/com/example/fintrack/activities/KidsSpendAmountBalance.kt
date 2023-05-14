@@ -17,6 +17,7 @@ class KidsSpendAmountBalance : AppCompatActivity() {
     private lateinit var ImgPiggyPg42: ImageView
     private lateinit var ImgPenguinPg42: ImageView
     private lateinit var ImgHoneyPg42: ImageView
+     private lateinit var ImgVHomePg45: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,6 +30,12 @@ class KidsSpendAmountBalance : AppCompatActivity() {
         ImgPiggyPg42 = findViewById(R.id.ImgPiggyPg42)
         ImgPenguinPg42 = findViewById(R.id.ImgPenguinPg42)
         ImgHoneyPg42 = findViewById(R.id.ImgHoneyPg42)
+        ImgVHomePg45 = findViewById(R.id.ImgVHomePg45)
+
+        ImgVHomePg45.setOnClickListener {
+            val intent = Intent(this, KidsLogin::class.java)
+            startActivity(intent)
+        }
 
         val name = intent.getStringExtra("NAME")
         tvKidsHome.text = "Hello $name \uD83D\uDE00 \uD83D\uDC4B"

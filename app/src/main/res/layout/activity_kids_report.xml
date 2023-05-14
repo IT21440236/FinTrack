@@ -87,12 +87,12 @@
             android:id="@+id/lb_totBudgetPg34"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="65dp"
             android:fontFamily="@font/segoe_ui"
+            android:gravity="center"
             android:text="@string/lb_tot_budget"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
-            android:gravity="center"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -117,7 +117,7 @@
             android:id="@+id/lb_balancePg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="40dp"
             android:fontFamily="@font/segoe_ui"
             android:gravity="center"
             android:text="@string/lb_spend"
@@ -147,7 +147,7 @@
             android:id="@+id/lb_expensePg34"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="40dp"
             android:fontFamily="@font/segoe_ui"
             android:gravity="center"
             android:text="@string/lb_balance"
@@ -172,6 +172,32 @@
             app:layout_constraintHorizontal_bias="0.51"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/lb_balancePg" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/home_layputPg44"
+        android:layout_width="411dp"
+        android:layout_height="57dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/ImgVHomePg45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.46"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.571"
+            app:srcCompat="@drawable/home_blue" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

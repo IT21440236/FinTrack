@@ -13,6 +13,7 @@ class KidsAmount : AppCompatActivity() {
     private lateinit var dbRefBalance: DatabaseReference
     private lateinit var dbRefTotal: DatabaseReference
     private lateinit var ImgVPiggyBankPg45: ImageView
+    private lateinit var ImgVHomePg45: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,6 +25,7 @@ class KidsAmount : AppCompatActivity() {
         dbRefBalance = FirebaseDatabase.getInstance().getReference("kids_balance")
         dbRefTotal = FirebaseDatabase.getInstance().getReference("kids_total")
 
+        ImgVHomePg45 = findViewById(R.id.ImgVHomePg45)
         ImgVPiggyBankPg45.setOnClickListener {
             val amount = edtAmountPg45.text.toString().toInt()
 

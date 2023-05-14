@@ -1,8 +1,10 @@
 package com.example.fintrack.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import com.example.fintrack.R
 import com.google.firebase.database.DataSnapshot
@@ -22,6 +24,8 @@ class KidsReport : AppCompatActivity() {
     private lateinit var dbRefSpend: DatabaseReference
     private lateinit var dbRefBalance: DatabaseReference
 
+    private lateinit var ImgVHomePg45: ImageView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_kids_report)
@@ -34,6 +38,13 @@ class KidsReport : AppCompatActivity() {
         dbRefAmount = FirebaseDatabase.getInstance().getReference("kids_total")
         dbRefSpend = FirebaseDatabase.getInstance().getReference("kids_spend")
         dbRefBalance = FirebaseDatabase.getInstance().getReference("kids_balance")
+
+        ImgVHomePg45 = findViewById(R.id.ImgVHomePg45)
+
+        ImgVHomePg45.setOnClickListener {
+            val intent = Intent(this, KidsLogin::class.java)
+            startActivity(intent)
+        }
 
         val name = intent.getStringExtra("NAME")
         tvKidsReport.text = "Hello $name \uD83D\uDE00 \uD83D\uDC4B"

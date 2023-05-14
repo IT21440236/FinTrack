@@ -48,14 +48,14 @@
 
     <Button
         android:id="@+id/btnKidLog"
-        android:layout_width="122dp"
-        android:layout_height="48dp"
+        android:layout_width="118dp"
+        android:layout_height="54dp"
         android:layout_marginStart="80dp"
         android:layout_marginTop="450dp"
         android:layout_marginEnd="272dp"
         android:background="@drawable/btn_add_bg_colour"
-        android:textColor="@color/white"
         android:text="Kids Savings"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.31"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,8 +63,8 @@
 
     <Button
         android:id="@+id/btnKidReport"
-        android:layout_width="115dp"
-        android:layout_height="48dp"
+        android:layout_width="117dp"
+        android:layout_height="54dp"
         android:layout_marginStart="272dp"
         android:layout_marginTop="450dp"
         android:layout_marginEnd="70dp"

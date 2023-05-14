@@ -1,5 +1,6 @@
 package com.example.fintrack.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
@@ -15,6 +16,7 @@ class KidsSpend : AppCompatActivity() {
     private lateinit var ImgVPenguinPg43: ImageView
     private lateinit var dbBalanceRef: DatabaseReference
     private lateinit var dbSpendRef: DatabaseReference
+    private lateinit var ImgVHomePg45: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,6 +27,13 @@ class KidsSpend : AppCompatActivity() {
 
         dbBalanceRef = FirebaseDatabase.getInstance().getReference("kids_balance")
         dbSpendRef = FirebaseDatabase.getInstance().getReference("kids_spend")
+
+        ImgVHomePg45 = findViewById(R.id.ImgVHomePg45)
+
+        ImgVHomePg45.setOnClickListener {
+            val intent = Intent(this, KidsSpendAmountBalance::class.java)
+            startActivity(intent)
+        }
 
         ImgVPenguinPg43.setOnClickListener {
             val spendAmount = edtSpendPg43.text.toString().toInt()

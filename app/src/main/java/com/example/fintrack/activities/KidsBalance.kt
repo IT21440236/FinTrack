@@ -1,7 +1,9 @@
 package com.example.fintrack.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.TextView
 import com.example.fintrack.R
 import com.google.firebase.database.DataSnapshot
@@ -14,6 +16,7 @@ class KidsBalance : AppCompatActivity() {
 
     private lateinit var dbRef: DatabaseReference
     private lateinit var lb_savePg42: TextView
+    private lateinit var ImgVHomePg45: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,6 +24,13 @@ class KidsBalance : AppCompatActivity() {
 
         lb_savePg42 = findViewById(R.id.lb_savePg42)
         dbRef = FirebaseDatabase.getInstance().getReference("kids_balance")
+
+        ImgVHomePg45 = findViewById(R.id.ImgVHomePg45)
+
+        ImgVHomePg45.setOnClickListener {
+            val intent = Intent(this, KidsSpendAmountBalance::class.java)
+            startActivity(intent)
+        }
 
         dbRef.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {

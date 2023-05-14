@@ -180,7 +180,7 @@
                 android:layout_marginBottom="50dp"
                 android:orientation="horizontal">
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btnUpdateEP"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
@@ -192,17 +192,7 @@
                     android:textColor="#ffffff"
                     android:textSize="18dp" />
 
-                <Button
-                    android:id="@+id/btnDeleteEP"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/background_btn_black"
-                    android:text="Delete"
-                    android:textAllCaps="false"
-                    android:textColor="#ffffff"
-                    android:textSize="20dp" />
+
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

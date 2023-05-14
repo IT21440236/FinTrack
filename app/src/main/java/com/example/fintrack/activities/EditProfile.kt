@@ -19,7 +19,7 @@ class EditProfile : AppCompatActivity() {
     private lateinit var etTel: EditText
     private lateinit var etNIC: EditText
     private lateinit var btnUpdate: Button
-    private lateinit var btnDelete: Button
+    //private lateinit var btnDelete: Button
 
     private  lateinit var firebaseAuth: FirebaseAuth
     var databaseReference :  DatabaseReference? = null
@@ -35,7 +35,7 @@ class EditProfile : AppCompatActivity() {
         etTel = findViewById(R.id.etTelEP)
         etNIC = findViewById(R.id.etNicEP)
         btnUpdate = findViewById(R.id.btnUpdateEP)
-        btnDelete = findViewById(R.id.btnDeleteEP)
+        //btnDelete = findViewById(R.id.btnDeleteEP)
 
         firebaseAuth = FirebaseAuth.getInstance()
 

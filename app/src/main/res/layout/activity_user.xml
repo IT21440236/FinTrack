@@ -139,7 +139,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
-                android:text="@string/lb_analytics"
+                android:text="Goals"
                 android:textColor="@color/black"
                 android:textSize="20dp"
                 app:layout_constraintBottom_toBottomOf="parent"

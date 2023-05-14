@@ -128,6 +128,10 @@
         android:layout_width="95dp"
         android:layout_height="67dp"
         android:layout_marginBottom="36dp"
+
+
+        android:clickable="true"
+
         app:layout_constraintBottom_toTopOf="@+id/ImgVGoogleLogo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"

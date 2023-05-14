@@ -1,6 +1,7 @@
 package com.example.fintrack.activities
 
 import android.content.Intent
+
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,6 +10,20 @@ import android.widget.ImageView
 import com.example.fintrack.R
 
 class index : AppCompatActivity() {
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.ImageView
+import com.example.fintrack.R
+
+
+
+class index : AppCompatActivity() {
+
+    private lateinit var ImgVArrow : ImageView
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_index)
@@ -35,5 +50,14 @@ class index : AppCompatActivity() {
             val facebookLoginIntent = Intent(Intent.ACTION_VIEW, facebookLoginUri)
             startActivity(facebookLoginIntent)
         }
+
+
+        ImgVArrow = findViewById(R.id.ImgVArrow)
+
+        ImgVArrow.setOnClickListener {
+            val intent = Intent(this, Home::class.java)
+            startActivity(intent)
+        }
+
     }
 }

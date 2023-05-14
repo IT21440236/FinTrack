@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.fintrack.R
 import com.example.fintrack.models.IncomeModel
 
-class IncAdapter (private val incList: ArrayList<IncomeModel>): RecyclerView.Adapter<IncAdapter.ViewHolder>(){
+class IncAdapter (private var incList: ArrayList<IncomeModel>): RecyclerView.Adapter<IncAdapter.ViewHolder>(){
 
     private lateinit var mListener: onItemClickListener
 
@@ -36,6 +36,11 @@ class IncAdapter (private val incList: ArrayList<IncomeModel>): RecyclerView.Ada
 
     override fun getItemCount(): Int {
         return incList.size
+    }
+    fun submitList(newList: List<IncomeModel>) {
+        incList.clear()
+        incList.addAll(newList)
+        notifyDataSetChanged()
     }
 
 

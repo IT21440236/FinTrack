@@ -14,7 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinTrack"
         tools:targetApi="31">
-
+        <activity
+            android:name=".activities.GoalReco"
+            android:exported="false" />
         <!-- Bhanuka -->
         <activity
             android:name=".activities.EditProfile"
@@ -65,13 +67,13 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-         <activity
-         android:name=".activities.MainActivity"
-         android:exported="false">
-         <meta-data
-         android:name="android.app.lib_name"
-         android:value="" />
-         </activity>
+        <!-- <activity -->
+        <!-- android:name=".activities.MainActivity" -->
+        <!-- android:exported="false"> -->
+        <!-- <meta-data -->
+        <!-- android:name="android.app.lib_name" -->
+        <!-- android:value="" /> -->
+        <!-- </activity> -->
         <activity
             android:name=".activities.SignInActivity"
             android:exported="false">
@@ -79,53 +81,47 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity
-            android:name=".activities.SignUpActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+
+         <activity
+         android:name=".activities.SignUpActivity"
+         android:exported="false">
+         <meta-data
+         android:name="android.app.lib_name"
+         android:value="" />
+         </activity>
         <!-- Bhanuka -->
 
-        <!-- Yasitha -->
+        <!-- yasitha-->
 
-<!--        <activity-->
-<!--            android:name=".AddSubscription"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".activities.UpdateExpense"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".activities.UpdateIncome"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".activities.SelectBudget"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".activities.AddExpense"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".activities.NewBudget"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".activities.AddIncome"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".activities.Expense"-->
-<!--            android:exported="false" /> &lt;!&ndash; <activity &ndash;&gt;-->
-        <!-- android:name=".activities.MainActivity" -->
-        <!-- android:exported="false" /> -->
-<!--        <activity-->
-<!--            android:name=".Subscriptions"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".UpdateSubscription"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".activities.Income"-->
-<!--            android:exported="false" /> -->
-        <!-- Yasitha -->
+        <activity
+            android:name=".activities.Home"
+            android:exported="false" />
+        <activity
+            android:name=".activities.UpdateExpense"
+            android:exported="false" />
+        <activity
+            android:name=".activities.UpdateIncome"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Expense"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AddExpense"
+            android:exported="false" />
+        <activity
+            android:name=".activities.NewBudget"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AddIncome"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SelectBudget"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Income"
+            android:exported="false"/>
+
+        <!-- yasitha-->
 
         <!-- Wasana -->
         <activity
@@ -156,13 +152,13 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity
-            android:name=".activities.KidsAmount"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+         <activity
+         android:name=".activities.KidsAmount"
+         android:exported="false">
+         <meta-data
+         android:name="android.app.lib_name"
+         android:value="" />
+         </activity>
         <activity
             android:name=".activities.KidsSpendAmountBalance"
             android:exported="false">
@@ -212,13 +208,17 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-<!--        <activity-->
-<!--            android:name=".activities.MainActivity"-->
-<!--            android:exported="false">-->
-<!--            <meta-data-->
-<!--                android:name="android.app.lib_name"-->
-<!--                android:value="" />-->
-<!--        </activity> &lt;!&ndash; Wasana &ndash;&gt;-->
+
+         <activity
+         android:name=".activities.MainActivity"
+         android:exported="false">
+         <meta-data
+         android:name="android.app.lib_name"
+         android:value="" />
+         </activity>
+        <!-- Wasana -->
+
+<!--        Yeran-->
         <activity
             android:name=".activities.CardDetailsActivity"
             android:exported="false" />
@@ -234,30 +234,29 @@
         <activity
             android:name=".activities.MainActivityPg7"
             android:exported="false" />
+        <activity
+            android:name=".activities.WalletActivity"
+            android:exported="false" />
 
 
 <!--        Start-up Activity-->
-        <activity
-            android:name=".activities.WalletActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+         <activity
+         android:name=".activities.index"
+         android:exported="true">
+         <intent-filter>
+         <action android:name="android.intent.action.MAIN" />
+         <category android:name="android.intent.category.LAUNCHER" />
+         </intent-filter>
+         </activity>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-
-
-
-<!--        Cloud messaging-->
-        <service
-            android:name=".activities.MyFirebaseMessagingService"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-            </intent-filter>
-        </service>
+        <!-- Cloud messaging -->
+<!--        <service-->
+<!--            android:name=".activities.MyFirebaseMessagingService"-->
+<!--            android:exported="false">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.google.firebase.MESSAGING_EVENT" />-->
+<!--            </intent-filter>-->
+<!--        </service>-->
     </application>
 
 </manifest>

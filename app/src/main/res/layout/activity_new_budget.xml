@@ -40,111 +40,140 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/lbcurrentbudgetcardNB"
-        android:layout_width="350dp"
-        android:layout_height="120dp"
-
-        android:layout_marginTop="16dp"
-        android:background="@drawable/currentbudgetcard"
-        android:elevation="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lbheaderNB" />
-
-    <TextView
-        android:id="@+id/lbcurrentbudgetNB"
-        android:layout_width="wrap_content"
+    <include
+        layout="@layout/card_budget"
+        android:id="@+id/cardView"
+        android:layout_width="390dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:elevation="110dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        app:layout_editor_absoluteX="10sp"
+        app:layout_constraintTop_toBottomOf="@+id/lbheaderNB"/>
+
+
+    <!--    <TextView-->
+<!--        android:id="@+id/lbcurrentbudgetcardNB"-->
+<!--        android:layout_width="350dp"-->
+<!--        android:layout_height="120dp"-->
+
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:background="@drawable/currentbudgetcard"-->
+<!--        android:elevation="10dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.488"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/lbheaderNB" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/lbcurrentbudgetNB"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:elevation="110dp"-->
+<!--        android:fontFamily="@font/segoe_ui"-->
+<!--        android:text="@string/lb_current_budget"-->
+<!--        android:textColor="@color/bluesample1"-->
+<!--        android:textSize="@dimen/rs_subheader2"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/lbcurrentbudgetcardNB"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/lbcurrentbudgetcardNB"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/lbcurrentbudgetcardNB" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/lbexpensesNB"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="28dp"-->
+<!--        android:layout_marginTop="4dp"-->
+<!--        android:elevation="10dp"-->
+<!--        android:fontFamily="@font/segoe_ui"-->
+<!--        android:text="@string/lb_expenses"-->
+<!--        android:textSize="16sp"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/lbcurrentbudgetcardNB"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/lbcurrentbudgetNB" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/lbsavingsNB"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="4dp"-->
+<!--        android:layout_marginEnd="36dp"-->
+<!--        android:elevation="10dp"-->
+<!--        android:fontFamily="@font/segoe_ui"-->
+<!--        android:text="@string/lb_saving"-->
+<!--        android:textSize="16sp"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/lbcurrentbudgetcardNB"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/lbcurrentbudgetNB" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/lbcardexpval1NB"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="28dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:elevation="10dp"-->
+<!--        android:fontFamily="@font/segoe_ui_bold"-->
+<!--        android:text="@string/lb_budget_card_expvalue"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/lbcurrentbudgetcardNB"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/lbexpensesNB" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/lbcardsavval1NB"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="24dp"-->
+<!--        android:elevation="10dp"-->
+<!--        android:fontFamily="@font/segoe_ui_bold"-->
+<!--        android:text="@string/lb_budget_card_savval"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/lbcurrentbudgetcardNB"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/lbsavingsNB" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/lbdaycardNB"-->
+<!--        android:layout_width="75dp"-->
+<!--        android:layout_height="30dp"-->
+
+<!--        android:layout_marginTop="12dp"-->
+<!--        android:background="@drawable/budgetcarddaysbg"-->
+<!--        android:elevation="12dp"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/lbcurrentbudgetcardNB"-->
+<!--        app:layout_constraintHorizontal_bias="0.501"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/lbcurrentbudgetcardNB"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/lbcurrentbudgetNB" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/lbcarddayNB"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:elevation="12dp"-->
+<!--        android:text="@string/lb_budget_cardday"-->
+<!--        android:textColor="@color/white"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/lbdaycardNB"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/lbdaycardNB"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/lbdaycardNB"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/lbdaycardNB" />-->
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btncreatebudgetNB"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="128dp"
+
+        android:background="@drawable/setbtnbg"
         android:fontFamily="@font/segoe_ui"
-        android:text="@string/lb_current_budget"
-        android:textColor="@color/bluesample1"
-        android:textSize="@dimen/rs_subheader2"
-        app:layout_constraintEnd_toEndOf="@+id/lbcurrentbudgetcardNB"
-        app:layout_constraintStart_toStartOf="@+id/lbcurrentbudgetcardNB"
-        app:layout_constraintTop_toTopOf="@+id/lbcurrentbudgetcardNB" />
-
-    <TextView
-        android:id="@+id/lbexpensesNB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="4dp"
-        android:elevation="10dp"
-        android:fontFamily="@font/segoe_ui"
-        android:text="@string/lb_expenses"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/lbcurrentbudgetcardNB"
-        app:layout_constraintTop_toBottomOf="@+id/lbcurrentbudgetNB" />
-
-    <TextView
-        android:id="@+id/lbsavingsNB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="36dp"
-        android:elevation="10dp"
-        android:fontFamily="@font/segoe_ui"
-        android:text="@string/lb_saving"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/lbcurrentbudgetcardNB"
-        app:layout_constraintTop_toBottomOf="@+id/lbcurrentbudgetNB" />
-
-    <TextView
-        android:id="@+id/lbcardexpval1NB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="8dp"
-        android:elevation="10dp"
-        android:fontFamily="@font/segoe_ui_bold"
-        android:text="@string/lb_budget_card_expvalue"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/lbcurrentbudgetcardNB"
-        app:layout_constraintTop_toBottomOf="@+id/lbexpensesNB" />
-
-    <TextView
-        android:id="@+id/lbcardsavval1NB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
-        android:elevation="10dp"
-        android:fontFamily="@font/segoe_ui_bold"
-        android:text="@string/lb_budget_card_savval"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/lbcurrentbudgetcardNB"
-        app:layout_constraintTop_toBottomOf="@+id/lbsavingsNB" />
-
-    <TextView
-        android:id="@+id/lbdaycardNB"
-        android:layout_width="75dp"
-        android:layout_height="30dp"
-
-        android:layout_marginTop="12dp"
-        android:background="@drawable/budgetcarddaysbg"
-        android:elevation="12dp"
-        app:layout_constraintEnd_toEndOf="@+id/lbcurrentbudgetcardNB"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="@+id/lbcurrentbudgetcardNB"
-        app:layout_constraintTop_toBottomOf="@+id/lbcurrentbudgetNB" />
-
-    <TextView
-        android:id="@+id/lbcarddayNB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:elevation="12dp"
-        android:text="@string/lb_budget_cardday"
+        android:text="@string/btn_create_budget"
+        android:textAllCaps="false"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/lbdaycardNB"
-        app:layout_constraintEnd_toEndOf="@+id/lbdaycardNB"
-        app:layout_constraintStart_toStartOf="@+id/lbdaycardNB"
-        app:layout_constraintTop_toTopOf="@+id/lbdaycardNB" />
+
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView" />
 
     <TextView
         android:id="@+id/lbforegroundNB"

@@ -5,13 +5,17 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
+import android.widget.SearchView
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fintrack.R
 import com.example.fintrack.adapters.ExpAdapter
+import com.example.fintrack.adapters.IncAdapter
 import com.example.fintrack.models.ExpenseModel
 import com.google.firebase.database.*
+import java.util.*
+import kotlin.collections.ArrayList
 
 class Expense : AppCompatActivity() {
 
@@ -19,7 +23,7 @@ class Expense : AppCompatActivity() {
     private lateinit var lbLoadingEP: TextView
     private lateinit var expList: ArrayList<ExpenseModel>
     private lateinit var dbRef: DatabaseReference
-
+    private lateinit var searchView: SearchView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_expense)
@@ -40,13 +44,69 @@ class Expense : AppCompatActivity() {
         expRecyclerView.layoutManager = LinearLayoutManager(this)
         expRecyclerView.setHasFixedSize(true)
         lbLoadingEP =  findViewById(R.id.lbLoadingEP)
+        searchView = findViewById(R.id.searchviewEP)
 
         expList = arrayListOf<ExpenseModel>()
 
         getExpenseData()
 
+//        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+//            override fun onQueryTextSubmit(query: String?): Boolean {
+//                return false
+//            }
+//
+//            override fun onQueryTextChange(newText: String?): Boolean {
+//                filter(newText, selectedCategory) // Pass the selected category along with the search text
+//                return true
+//            }
+//        })
 
 
+
+        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                return false
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                filter(newText)
+                return true
+            }
+        })
+
+    }
+
+//    private fun filter(text: String?, category: String?) {
+//        text?.let { searchText ->
+//            val filteredList = if (category.isNullOrEmpty()) {
+//                // Filter by expense name only
+//                expList.filter { expense ->
+//                    expense.expName?.toLowerCase(Locale.ROOT)?.contains(searchText.toLowerCase(Locale.ROOT)) == true
+//                }
+//            } else {
+//                // Filter by expense name and category
+//                expList.filter { expense ->
+//                    val matchesSearchText = expense.expName?.toLowerCase(Locale.ROOT)?.contains(searchText.toLowerCase(Locale.ROOT)) == true
+//                    val matchesCategory = expense.expCategory?.toLowerCase(Locale.ROOT)?.contains(category.toLowerCase(Locale.ROOT)) == true
+//                    matchesSearchText && matchesCategory
+//                }
+//            }
+//            (expRecyclerView.adapter as ExpAdapter).submitList(filteredList)
+//        } ?: run {
+//            (expRecyclerView.adapter as ExpAdapter).submitList(expList)
+//        }
+//    }
+
+
+    private fun filter(text: String?) {
+        text?.let {
+            val filteredList = expList.filter { expense ->
+                expense.expName?.toLowerCase(Locale.ROOT)?.contains(text.toLowerCase(Locale.ROOT)) == true
+            }
+            (expRecyclerView.adapter as ExpAdapter).submitList(filteredList)
+        } ?: run {
+            (expRecyclerView.adapter as ExpAdapter).submitList(expList)
+        }
     }
 
     private fun getExpenseData(){

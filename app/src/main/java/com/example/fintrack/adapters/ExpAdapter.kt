@@ -7,9 +7,11 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fintrack.R
+import com.example.fintrack.activities.Expense
 import com.example.fintrack.models.ExpenseModel
+import com.example.fintrack.models.IncomeModel
 
-class ExpAdapter (private val expList: ArrayList<ExpenseModel>) : RecyclerView.Adapter<ExpAdapter.ViewHolder>(){
+class ExpAdapter (private var expList: ArrayList<ExpenseModel>) : RecyclerView.Adapter<ExpAdapter.ViewHolder>(){
 
     private lateinit var mListener: onItemClickListener
 
@@ -36,6 +38,12 @@ class ExpAdapter (private val expList: ArrayList<ExpenseModel>) : RecyclerView.A
 
     override fun getItemCount(): Int {
         return expList.size
+    }
+
+    fun submitList(newList: List<ExpenseModel>) {
+        expList.clear()
+        expList.addAll(newList)
+        notifyDataSetChanged()
     }
 
     class ViewHolder(itemView: View, clickListener: onItemClickListener) : RecyclerView.ViewHolder(itemView) {

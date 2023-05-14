@@ -17,6 +17,8 @@ class ContactusActivity : AppCompatActivity() {
     private lateinit var etEmail: EditText
     private lateinit var etMessage: EditText
     private lateinit var btnContactus: Button
+    
+    private lateinit var btnBack: ImageView
 
     private lateinit var dbRef: DatabaseReference
 
@@ -28,11 +30,17 @@ class ContactusActivity : AppCompatActivity() {
         etEmail = findViewById(R.id.etEmailCU)
         etMessage = findViewById(R.id.etMessageCU)
         btnContactus = findViewById(R.id.btnSubmitCU)
+        
+        btnBack=findViewById<ImageView>(R.id.btnBackAP)
 
         dbRef = FirebaseDatabase.getInstance().getReference("Contactus")
 
         btnContactus.setOnClickListener {
             saveContactusData()
+        }
+        
+        btnBack.setOnClickListener {
+            startActivity(Intent(this@ContactusActivity, UserActivity::class.java))
         }
     }
 

@@ -16,6 +16,8 @@ class AddgoalActivity : AppCompatActivity() {
     private lateinit var etpaymenttime: EditText
     private lateinit var etAmount: EditText
     private lateinit var btnGoalAdd: Button
+    
+    private lateinit var btnBack: ImageView
 
     private lateinit var dbRef: DatabaseReference
 
@@ -27,14 +29,21 @@ class AddgoalActivity : AppCompatActivity() {
         etpaymenttime = findViewById(R.id.etPaymentTimeAGP)
         etAmount = findViewById(R.id.etAmountAP)
         btnGoalAdd = findViewById(R.id.btnAddAP)
+        
+        btnBack=findViewById<ImageView>(R.id.btnBackAP)
 
         dbRef = FirebaseDatabase.getInstance().getReference("Goal")
 
         btnGoalAdd.setOnClickListener {
             saveGoalData()
         }
+        
+        btnBack.setOnClickListener {
+            startActivity(Intent(this@AddgoalActivity, GoalActivity::class.java))
+        }
     }
 
+    //save goal data
     private fun saveGoalData(){
         //getting values
         val financialgoal = etGoal.text.toString()

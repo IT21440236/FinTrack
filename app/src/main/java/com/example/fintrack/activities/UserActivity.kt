@@ -21,6 +21,7 @@ class UserActivity : AppCompatActivity() {
     
     private lateinit var btnUser: ImageButton
     private lateinit var btnWallet: ImageButton
+    private lateinit var btnHome: ImageButton
 
     private  lateinit var firebaseAuth: FirebaseAuth
     var databaseReference :  DatabaseReference? = null
@@ -39,6 +40,7 @@ class UserActivity : AppCompatActivity() {
         
         btnUser=findViewById<ImageButton>(R.id.btnUserUP)
         btnWallet=findViewById<ImageButton>(R.id.btnWalletUP)
+        btnHome=findViewById<ImageButton>(R.id.btnHomeUP)
 
         tvAnalytics = findViewById(R.id.textView5)
 
@@ -76,6 +78,10 @@ class UserActivity : AppCompatActivity() {
 
         btnWallet.setOnClickListener {
             startActivity(Intent(this@UserActivity, WalletActivity::class.java))
+        }
+        
+        btnHome.setOnClickListener {
+            startActivity(Intent(this@UserActivity, Home::class.java))
         }
 
 

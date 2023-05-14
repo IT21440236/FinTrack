@@ -93,6 +93,13 @@ import android.widget.ImageView
                     val intent = Intent(this, GoalActivity::class.java)
                     startActivity(intent)
                 }
+                val ImgVAnalyticsPg6 = findViewById<ImageView>(R.id.ImgVAnalyticsPg6)
+
+
+        ImgVAnalyticsPg6.setOnClickListener{
+            val intent= Intent(this, NewBudget::class.java)
+            startActivity(intent)
+        }
 
             }
 

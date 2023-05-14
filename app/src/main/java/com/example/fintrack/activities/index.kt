@@ -42,12 +42,12 @@ import com.example.fintrack.R
             }
 
 
-            ImgVArrow = findViewById(R.id.ImgVArrow)
+//             ImgVArrow = findViewById(R.id.ImgVArrow)
 
-            ImgVArrow.setOnClickListener {
-                val intent = Intent(this, Home::class.java)
-                startActivity(intent)
-            }
+//             ImgVArrow.setOnClickListener {
+//                 val intent = Intent(this, Home::class.java)
+//                 startActivity(intent)
+//             }
 
         }
     }

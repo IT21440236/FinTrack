@@ -59,6 +59,13 @@ class Expense : AppCompatActivity() {
             val intent=Intent(this, UserActivity::class.java)
             startActivity(intent)
         }
+        val imageView = findViewById<ImageView>(R.id.imageView)
+
+
+        imageView.setOnClickListener{
+            val intent=Intent(this, Home::class.java)
+            startActivity(intent)
+        }
 
 
         val firebase : DatabaseReference = FirebaseDatabase.getInstance().getReference()

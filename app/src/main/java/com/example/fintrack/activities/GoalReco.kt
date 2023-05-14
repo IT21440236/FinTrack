@@ -16,6 +16,8 @@ class GoalReco : AppCompatActivity() {
     private lateinit var tvRec2: TextView
     private lateinit var tvRec3: TextView
     private lateinit var btnCalc: Button
+    
+    private lateinit var btnBack: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,6 +30,8 @@ class GoalReco : AppCompatActivity() {
         tvRec2 = findViewById(R.id.textView13)
         tvRec3 = findViewById(R.id.textView7)
         btnCalc = findViewById(R.id.btnCheck1)
+        
+        btnBack=findViewById<ImageView>(R.id.btnBackAP)
 
         btnCalc.setOnClickListener {
             val fullAmount:Double = etAmount.text.toString().toDouble()
@@ -60,6 +64,10 @@ class GoalReco : AppCompatActivity() {
                 tvRec2.text = "Major Purchase: ${df.format(rec5)} for ${time}"
                 tvRec3.text = "Emergency fund: ${df.format(rec6)} for ${time}"
             }
+        }
+        
+        btnBack.setOnClickListener {
+            startActivity(Intent(this@GoalReco, GoalActivity::class.java))
         }
 
     }

@@ -62,9 +62,10 @@
         app:layout_constraintVertical_bias="1.0">
 
         <ImageView
-            android:id="@+id/ImgVHomePg44"
+            android:id="@+id/ImgVHomePg45"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:clickable="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.46"

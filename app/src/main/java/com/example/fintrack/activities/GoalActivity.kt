@@ -35,8 +35,11 @@ class GoalActivity : AppCompatActivity() {
 
     //private lateinit var etAmount :EditText
     private lateinit var btnCheck:Button
-    private lateinit var btnBack:Button
-    private lateinit var btnHome:Button
+    //private lateinit var btnBack:Button
+    private lateinit var btnHome:ImageButton 
+    private lateinit var btnUser:ImageButton
+    private lateinit var btnWallet:ImageButton
+    private lateinit var btnBack:ImageView
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -49,8 +52,12 @@ class GoalActivity : AppCompatActivity() {
 
         //etAmount = findViewById(R.id.etGoalAmount)
         btnCheck = findViewById(R.id.btnCheck)
-        btnBack = findViewById(R.id.btnBackAP)
-        btnHome = findViewById(R.id.btnHomeUP)
+        //btnBack = findViewById(R.id.btnBackAP)
+        //btnHome = findViewById(R.id.btnHomeUP)
+        
+        btnUser=findViewById<ImageButton>(R.id.btnUserAP)
+        btnWallet=findViewById<ImageButton>(R.id.btnWalletAP)
+        btnBack=findViewById<ImageView>(R.id.btnBackAP)
 
         btnBack.setOnClickListener {
             startActivity(Intent(this@GoalActivity, UserActivity::class.java))
@@ -109,16 +116,28 @@ class GoalActivity : AppCompatActivity() {
 
             startActivity(Intent(this@GoalActivity, GoalReco::class.java))
         }
+        
+        btnUser.setOnClickListener {
+            startActivity(Intent(this@GoalActivity, UserActivity::class.java))
+        }
+
+        btnWallet.setOnClickListener {
+            startActivity(Intent(this@GoalActivity, WalletActivity::class.java))
+        }
+
+        btnBack.setOnClickListener {
+            startActivity(Intent(this@GoalActivity, UserActivity::class.java))
+        }
 
 
 
     }
 
-    private fun decrease(res1 : Int, res2 : Int){
-        val result = res1 - res2
+//     private fun decrease(res1 : Int, res2 : Int){
+//         val result = res1 - res2
 
-        Toast.makeText(this, "Remain amount Rs.${result} ", Toast.LENGTH_LONG).show()
-    }
+//         Toast.makeText(this, "Remain amount Rs.${result} ", Toast.LENGTH_LONG).show()
+//     }
 
 //    private fun filterList(query: String?){
 ////        if(query != null){
@@ -175,6 +194,7 @@ class GoalActivity : AppCompatActivity() {
 ////        goalRecyclerView.adapter = mAdapter
 //    }
 
+//search
     private fun filter(text:String?){
         text?.let{
             val filteredList=goalList.filter { goal->
@@ -186,6 +206,7 @@ class GoalActivity : AppCompatActivity() {
         }
     }
 
+    //fetch goal data
     private fun getGoalData(){
         goalRecyclerView.visibility = View.GONE
 

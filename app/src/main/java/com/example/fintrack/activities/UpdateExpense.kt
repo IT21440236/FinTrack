@@ -31,6 +31,29 @@ class UpdateExpense : AppCompatActivity() {
             val intent= Intent(this, Expense::class.java)
             startActivity(intent)
         }
+         val imgHomeiconUE = findViewById<ImageView>(R.id.imgHomeiconUE)
+
+
+        imgHomeiconUE.setOnClickListener{
+            val intent=Intent(this, Home::class.java)
+            startActivity(intent)
+        }
+
+        val imgWalletUE = findViewById<ImageView>(R.id.imgWalletUE)
+
+
+        imgWalletUE.setOnClickListener{
+            val intent=Intent(this, WalletActivity::class.java)
+            startActivity(intent)
+        }
+
+        val imgUserUE = findViewById<ImageView>(R.id.imgUserUE)
+
+
+        imgUserUE.setOnClickListener{
+            val intent=Intent(this, UserActivity::class.java)
+            startActivity(intent)
+        }
 
         initView()
         setValuesToViews()

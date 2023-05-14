@@ -97,13 +97,22 @@
             android:name=".activities.Home"
             android:exported="false" />
         <activity
+
+            android:name=".activities.SelectBudget"
+            android:exported="false" />
+        <activity
+
             android:name=".activities.UpdateExpense"
             android:exported="false" />
         <activity
             android:name=".activities.UpdateIncome"
             android:exported="false" />
         <activity
+
+            android:name=".activities.index"
+
             android:name=".activities.Expense"
+
             android:exported="false" />
         <activity
             android:name=".activities.AddExpense"
@@ -115,7 +124,11 @@
             android:name=".activities.AddIncome"
             android:exported="false" />
         <activity
+
+            android:name=".activities.WalletActivity"
+
             android:name=".activities.SelectBudget"
+
             android:exported="false" />
         <activity
             android:name=".activities.Income"
@@ -235,8 +248,20 @@
             android:name=".activities.MainActivityPg7"
             android:exported="false" />
         <activity
+
+            android:name=".activities.Expense"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
             android:name=".activities.WalletActivity"
             android:exported="false" />
+
 
 
 <!--        Start-up Activity-->

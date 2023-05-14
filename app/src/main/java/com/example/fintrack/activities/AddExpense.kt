@@ -112,6 +112,7 @@ class AddExpense : AppCompatActivity() {
 
         if (expName.isEmpty()) {
             etnameAEP.error = "Please enter Expense name"
+            return
 
         }
 //        if (expCategory.isEmpty()) {
@@ -119,10 +120,12 @@ class AddExpense : AppCompatActivity() {
 //        }
         if (expAmount.isEmpty()) {
             etamountAEP.error = "Please enter an amount"
+            return
 
         }
         if (expDate.isEmpty()) {
             etdateAEP.error = "Please select a date"
+            return
 
         }
 

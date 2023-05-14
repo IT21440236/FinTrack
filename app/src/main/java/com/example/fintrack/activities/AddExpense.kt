@@ -35,6 +35,30 @@ class AddExpense : AppCompatActivity() {
             val intent= Intent(this, Expense::class.java)
             startActivity(intent)
         }
+        
+         val imgHomeiconAE = findViewById<ImageView>(R.id.imgHomeiconAE)
+
+
+        imgHomeiconAE.setOnClickListener{
+            val intent=Intent(this, Home::class.java)
+            startActivity(intent)
+        }
+
+        val imgWalleticonAE = findViewById<ImageView>(R.id.imgWalleticonAE)
+
+
+        imgWalleticonAE.setOnClickListener{
+            val intent=Intent(this, WalletActivity::class.java)
+            startActivity(intent)
+        }
+
+        val imgUsericonAE = findViewById<ImageView>(R.id.imgUsericonAE)
+
+
+        imgUsericonAE.setOnClickListener{
+            val intent=Intent(this, UserActivity::class.java)
+            startActivity(intent)
+        }
 
 
 

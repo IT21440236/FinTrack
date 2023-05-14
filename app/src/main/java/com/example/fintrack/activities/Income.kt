@@ -57,6 +57,30 @@ class Income : AppCompatActivity() {
             val intent= Intent(this, AddIncome::class.java)
             startActivity(intent)
         }
+        
+         val imgHomeiconIP = findViewById<ImageView>(R.id.imgHomeiconIP)
+
+
+        imgHomeiconIP.setOnClickListener{
+            val intent=Intent(this, Home::class.java)
+            startActivity(intent)
+        }
+
+        val imgWalleticonIP = findViewById<ImageView>(R.id.imgWalleticonIP)
+
+
+        imgWalleticonIP.setOnClickListener{
+            val intent=Intent(this, WalletActivity::class.java)
+            startActivity(intent)
+        }
+
+        val imgUsericonIP = findViewById<ImageView>(R.id.imgUsericonIP)
+
+
+        imgUsericonIP.setOnClickListener{
+            val intent=Intent(this, UserActivity::class.java)
+            startActivity(intent)
+        }
 
         val firebase : DatabaseReference = FirebaseDatabase.getInstance().getReference()
 

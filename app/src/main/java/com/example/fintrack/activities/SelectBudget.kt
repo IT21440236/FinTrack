@@ -38,6 +38,30 @@ class SelectBudget : AppCompatActivity() {
             val intent = Intent(this, NewBudget::class.java)
             startActivity(intent)
         }
+        
+        val imgHoneiconSB = findViewById<ImageView>(R.id.imgHoneiconSB)
+
+
+        imgHoneiconSB.setOnClickListener{
+            val intent=Intent(this, Home::class.java)
+            startActivity(intent)
+        }
+
+        val imgWalleticonSB = findViewById<ImageView>(R.id.imgWalleticonSB)
+
+
+        imgWalleticonSB.setOnClickListener{
+            val intent=Intent(this, WalletActivity::class.java)
+            startActivity(intent)
+        }
+
+        val imgUsericonSB = findViewById<ImageView>(R.id.imgUsericonSB)
+
+
+        imgUsericonSB.setOnClickListener{
+            val intent=Intent(this, UserActivity::class.java)
+            startActivity(intent)
+        }
 
         val days = ArrayList<String>()
         for (i in 1..30) {

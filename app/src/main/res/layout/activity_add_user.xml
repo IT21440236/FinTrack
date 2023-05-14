@@ -47,11 +47,11 @@
 
     <ImageView
         android:id="@+id/ImgVAdultUserPg31"
-        android:layout_width="123dp"
-        android:layout_height="95dp"
-        android:layout_marginTop="124dp"
+        android:layout_width="83dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="108dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/adult_profile_white" />
@@ -165,6 +165,7 @@
         android:layout_marginStart="45dp"
         android:layout_marginTop="240dp"
         android:layout_marginEnd="1dp"
+        android:clickable="true"
         android:fontFamily="@font/segoe_ui"
         android:text="@string/lb_name"
         android:textSize="20sp"
@@ -322,5 +323,17 @@
             app:srcCompat="@drawable/adult_profile_white" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
+    <Button
+        android:id="@+id/btnFetchDataUserP"
+        android:layout_width="189dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/bg_et_header"
+        android:text="Check user details"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lb_AddUserPg31" />
 </androidx.constraintlayout.widget.ConstraintLayout>

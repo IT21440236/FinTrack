@@ -1,10 +1,12 @@
 package com.example.fintrack.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
 import com.example.fintrack.models.MemberModel
 import com.example.fintrack.R
@@ -19,6 +21,9 @@ class AddUser : AppCompatActivity() {
     private lateinit var edt_workplacePg31: EditText
     private lateinit var btn_addPg31: Button
 
+    private lateinit var btnFetchDataUserP: Button
+    private lateinit var ImgVArrowPg31: ImageView
+
     private lateinit var dbRef: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,6 +35,18 @@ class AddUser : AppCompatActivity() {
         edt_occPg31 = findViewById(R.id.edt_occPg31)
         edt_workplacePg31 = findViewById(R.id.edt_workplacePg31)
         btn_addPg31 = findViewById(R.id.btn_addPg31)
+
+        btnFetchDataUserP = findViewById(R.id.btnFetchDataUserP)
+        ImgVArrowPg31 = findViewById(R.id.ImgVArrowPg31)
+
+        btnFetchDataUserP.setOnClickListener {
+            val intent = Intent(this, FetchingActivityUser::class.java)
+            startActivity(intent)
+        }
+        ImgVArrowPg31.setOnClickListener {
+            val intent = Intent(this, Home::class.java)
+            startActivity(intent)
+        }
 
         dbRef = FirebaseDatabase.getInstance().getReference("Members")
 

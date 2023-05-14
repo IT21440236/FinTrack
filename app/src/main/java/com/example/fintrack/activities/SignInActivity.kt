@@ -45,7 +45,7 @@ class SignInActivity : AppCompatActivity() {
 
         val currentuser = firebaseAuth.currentUser
         if(currentuser != null){
-            startActivity(Intent(this@SignInActivity, UserActivity::class.java))
+            startActivity(Intent(this@SignInActivity, Home::class.java))
             finish()
         }
 
@@ -62,7 +62,7 @@ class SignInActivity : AppCompatActivity() {
                 firebaseAuth.signInWithEmailAndPassword(email, pass).addOnCompleteListener {
                     if (it.isSuccessful) {
                         sendNotification()
-                        val intent = Intent(this@SignInActivity, UserActivity::class.java)
+                        val intent = Intent(this@SignInActivity, Home::class.java)
                         startActivity(intent)
                     } else {
                         Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()

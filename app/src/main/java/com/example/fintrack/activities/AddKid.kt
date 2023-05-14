@@ -1,9 +1,11 @@
 package com.example.fintrack.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
 import com.example.fintrack.R
 import com.example.fintrack.models.KidModel
@@ -20,6 +22,9 @@ class AddKid : AppCompatActivity() {
 
     private lateinit var dbRef: DatabaseReference
 
+    private lateinit var btnFetchDataKid: Button
+    private lateinit var ImgVArrowPg35: ImageView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_kid)
@@ -29,6 +34,18 @@ class AddKid : AppCompatActivity() {
         edt_gradePg35 = findViewById(R.id.edt_gradePg35)
         edt_schoolPg35 = findViewById(R.id.edt_schoolPg35)
         btn_addPg35 = findViewById(R.id.btn_addPg35)
+
+        btnFetchDataKid = findViewById(R.id.btnFetchDataKid)
+        ImgVArrowPg35 = findViewById(R.id.ImgVArrowPg35)
+
+        btnFetchDataKid.setOnClickListener {
+            val intent = Intent(this, FetchingActivityKid::class.java)
+            startActivity(intent)
+        }
+        ImgVArrowPg35.setOnClickListener {
+            val intent = Intent(this, Home::class.java)
+            startActivity(intent)
+        }
 
         dbRef = FirebaseDatabase.getInstance().getReference("Kids")
 

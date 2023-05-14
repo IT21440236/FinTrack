@@ -39,6 +39,7 @@ class WalletActivity : AppCompatActivity() {
     private lateinit var btnUserAP: ImageButton
 
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_wallet)
@@ -122,9 +123,10 @@ class WalletActivity : AppCompatActivity() {
             val intent = Intent(this, UserActivity::class.java)
             startActivity(intent)
         }
-//        btnHomeAP.setOnClickListener {
-//            val intent = Intent(this, ActivityHome::class.java)
-//            startActivity(intent)
-//        }
+        btnHomeAP.setOnClickListener {
+            val intent = Intent(this, Home::class.java)
+            startActivity(intent)
+        }
+
     }//end of onCreate
 }//end of WalletActivity

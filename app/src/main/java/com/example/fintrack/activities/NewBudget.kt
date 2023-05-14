@@ -57,6 +57,13 @@ class NewBudget : AppCompatActivity() {
             val intent=Intent(this, UserActivity::class.java)
             startActivity(intent)
         }
+        val ivbackwaredNB= findViewById<ImageView>(R.id.ivbackwaredNB)
+
+
+        ivbackwaredNB.setOnClickListener{
+            val intent=Intent(this, Home::class.java)
+            startActivity(intent)
+        }
 
         /////mod
 //        expenseValue = intent.getStringExtra("expenseValue")

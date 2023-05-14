@@ -36,6 +36,29 @@ class Expense : AppCompatActivity() {
             val intent=Intent(this, AddExpense::class.java)
             startActivity(intent)
         }
+         val imgHomeiconEP = findViewById<ImageView>(R.id.imgHomeiconEP)
+
+
+        imgHomeiconEP.setOnClickListener{
+            val intent=Intent(this, Home::class.java)
+            startActivity(intent)
+        }
+
+        val imgWalleticonEP = findViewById<ImageView>(R.id.imgWalleticonEP)
+
+
+        imgWalleticonEP.setOnClickListener{
+            val intent=Intent(this, WalletActivity::class.java)
+            startActivity(intent)
+        }
+
+        val imgUsericonEP = findViewById<ImageView>(R.id.imgUsericonEP)
+
+
+        imgUsericonEP.setOnClickListener{
+            val intent=Intent(this, UserActivity::class.java)
+            startActivity(intent)
+        }
 
 
         val firebase : DatabaseReference = FirebaseDatabase.getInstance().getReference()

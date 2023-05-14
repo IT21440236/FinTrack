@@ -93,6 +93,13 @@ import android.widget.ImageView
                     val intent = Intent(this, GoalActivity::class.java)
                     startActivity(intent)
                 }
+                val ImgVSubscriptionsPg6 = findViewById<ImageView>(R.id.ImgVSubscriptionsPg6)
+
+
+        ImgVSubscriptionsPg6.setOnClickListener{
+            val intent= Intent(this, KidsLogin::class.java)
+            startActivity(intent)
+        }
                 val ImgVAnalyticsPg6 = findViewById<ImageView>(R.id.ImgVAnalyticsPg6)
 
 

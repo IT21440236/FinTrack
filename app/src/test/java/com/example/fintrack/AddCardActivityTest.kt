@@ -14,7 +14,14 @@ package com.example.fintrack
 //
 //    @get:Rule
 //    var rule: ActivityTestRule<AddCardActivity> = ActivityTestRule(AddCardActivity::class.java)
-//
+////@Before is a JUnit annotation that denotes a method to be executed before each
+////test method is run. In the code you provided, the setUp() method annotated with
+////@Before is called before each test method is executed, and it instantiates an
+////instance of the AddUser class and assigns it to the addUser variable.
+////This allows you to reuse the addUser instance across multiple test methods,
+////without having to create a new instance for each test. This is a common pattern
+////in unit testing,where you want to set up some initial state or dependencies before each
+////test is run.
 //    @Before
 //    fun setUp() {
 //        activity = rule.activity

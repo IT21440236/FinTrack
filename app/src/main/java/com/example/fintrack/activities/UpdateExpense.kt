@@ -93,9 +93,16 @@ class UpdateExpense : AppCompatActivity() {
     private fun deleteExpense() {
         val dbRef = FirebaseDatabase.getInstance().getReference("Expenses").child(intent.getStringExtra("expId").toString())
         dbRef.removeValue()
-
-        Toast.makeText(applicationContext, "Expense Data Deleted", Toast.LENGTH_LONG).show()
-    }
+            .addOnSuccessListener {
+                Toast.makeText(applicationContext, "Expense Data Deleted", Toast.LENGTH_LONG).show()
+                val intent = Intent(this, Expense::class.java)
+                finish()
+                startActivity(intent)
+            }
+            .addOnFailureListener { error ->
+                Toast.makeText(applicationContext, "Error deleting expense data: ${error.message}", Toast.LENGTH_LONG).show()
+                }
+        }
 
 
 

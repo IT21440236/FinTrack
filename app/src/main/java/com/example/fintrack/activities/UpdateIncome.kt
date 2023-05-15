@@ -69,9 +69,16 @@ class UpdateIncome : AppCompatActivity() {
     private fun deleteIncome() {
         val dbRef = FirebaseDatabase.getInstance().getReference("Incomes").child(intent.getStringExtra("incId").toString())
         dbRef.removeValue()
-
-        Toast.makeText(applicationContext, "Income Data Deleted", Toast.LENGTH_LONG).show()
-    }
+            .addOnSuccessListener {
+                Toast.makeText(applicationContext, "Income Data Deleted", Toast.LENGTH_LONG).show()
+                val intent = Intent(this, Income::class.java)
+                finish()
+                startActivity(intent)
+            }
+            .addOnFailureListener { error ->
+                Toast.makeText(applicationContext, "Error deleting income data: ${error.message}", Toast.LENGTH_LONG).show()
+                }
+       }
 
     private fun updateIncome(){
         val dbRef = FirebaseDatabase.getInstance().getReference("Incomes").child(intent.getStringExtra("incId").toString())

@@ -202,6 +202,8 @@
         <item>Bank savings interest</item>
         <item>current account interest</item>
         <item>debtors</item>
+        <item>Rental Income</item>
+        <item>Freelance Earnings</item>
          
     </string-array>
 
@@ -211,6 +213,8 @@
         <item>Shopping</item>
         <item>Transport</item>
         <item>Food</item>
+        <item>Medical Expenses</item>
+        <item>Utilities</item>
          
     </string-array>
 

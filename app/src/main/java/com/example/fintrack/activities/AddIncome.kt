@@ -128,18 +128,18 @@ class AddIncome : AppCompatActivity() {
 
         if (incName.isEmpty()) {
             etnameAIP.error = "Please enter Expense name"
-
+            return
         }
 //        if (incCategory.isEmpty()) {
 //            spcategoryAIP.error("Please select a category")
 //        }
         if (incAmount.isEmpty()) {
             etamountAIP.error = "Please enter an amount"
-
+            return
         }
         if (incDate.isEmpty()) {
             etdateAIP.error = "Please select a date"
-
+            return
         }
 
         val incId = dbRef.push().key!!

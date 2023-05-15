@@ -29,9 +29,6 @@ import kotlin.random.Random
 
 class AddCardActivity : AppCompatActivity() {
 
-    //push notifications
-//    private val CHANNEL_ID = "channel_id_example_01"
-//    private val notificationId = 101
 
     //initializing variables
     private lateinit var btnBackWT : ImageView
@@ -48,6 +45,7 @@ class AddCardActivity : AppCompatActivity() {
     private lateinit var ibUser: ImageButton
 
 
+    //database
     private lateinit var dbRef: DatabaseReference
 
 
@@ -92,49 +90,7 @@ class AddCardActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-
-//        createNotificationChannel()
-
-
     }
-
-//    private fun createNotificationChannel(){
-//        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
-//            val name = "Notification Title"
-//            val descriptionText = "Notification Description"
-//            val importance : Int = NotificationManager.IMPORTANCE_DEFAULT
-//            val channel = NotificationChannel(CHANNEL_ID, name, importance).apply {
-//                description = descriptionText
-//            }
-//            val notificationManager: NotificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-//            notificationManager.createNotificationChannel(channel)
-//        }
-//    }
-
-//    private fun sendNotification(){
-//
-//        val intent: Intent = Intent(this,AddCardActivity::class.java).apply {
-//            flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-//        }
-//
-//        val pendingIntent: PendingIntent = PendingIntent.getActivity(this,0, intent, 0)
-//
-//        val bitmap = BitmapFactory.decodeResource(applicationContext.resources, R.drawable.visacard)
-//        val bitmapLargeIcon = BitmapFactory.decodeResource(applicationContext.resources, R.drawable.logo)
-//
-//        val builder = NotificationCompat.Builder(this,CHANNEL_ID)
-//            .setSmallIcon(R.drawable.logo)
-//            .setContentTitle("Example title")
-//            .setContentText("Example Description")
-//            .setLargeIcon(bitmapLargeIcon)
-//            .setStyle(NotificationCompat.BigPictureStyle().bigPicture(bitmap))
-//            .setContentIntent(pendingIntent)
-//            .setPriority(NotificationCompat.PRIORITY_DEFAULT)
-//
-//        with(NotificationManagerCompat.from(this)){
-//            notify(notificationId, builder.build())
-//        }
-//    }
 
 
     private fun saveCardData(){

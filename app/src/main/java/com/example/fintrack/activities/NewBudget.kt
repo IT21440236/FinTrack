@@ -116,8 +116,8 @@ class NewBudget : AppCompatActivity() {
             val expensesTextView = planView.findViewById<TextView>(R.id.tvExpenses)
 
             // Calculate savings and expenses for the plan
-            val savings = income * 0.2 * i
-            val expenses = income * 0.8 * i
+            val savings = income * 0.3 * i
+            val expenses = income * 0.2 * i
 
             savingsTextView.text = "Savings: Rs $savings"
             expensesTextView.text = "Expenses: Rs $expenses"

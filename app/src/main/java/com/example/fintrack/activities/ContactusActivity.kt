@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
 import com.example.fintrack.R
 import com.example.fintrack.models.ContactusModel
@@ -18,6 +19,8 @@ class ContactusActivity : AppCompatActivity() {
     private lateinit var etMessage: EditText
     private lateinit var btnContactus: Button
 
+    private lateinit var btnBack: ImageView
+
     private lateinit var dbRef: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,10 +32,16 @@ class ContactusActivity : AppCompatActivity() {
         etMessage = findViewById(R.id.etMessageCU)
         btnContactus = findViewById(R.id.btnSubmitCU)
 
+        btnBack=findViewById<ImageView>(R.id.btnBackAP)
+
         dbRef = FirebaseDatabase.getInstance().getReference("Contactus")
 
         btnContactus.setOnClickListener {
             saveContactusData()
+        }
+
+        btnBack.setOnClickListener {
+            startActivity(Intent(this@ContactusActivity, UserActivity::class.java))
         }
     }
 

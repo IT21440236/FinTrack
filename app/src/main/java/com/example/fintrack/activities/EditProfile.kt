@@ -1,11 +1,9 @@
 package com.example.fintrack.activities
 //
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import com.example.fintrack.R
 import com.example.fintrack.models.GoalModel
 import com.google.firebase.auth.FirebaseAuth
@@ -20,6 +18,8 @@ class EditProfile : AppCompatActivity() {
     private lateinit var etNIC: EditText
     private lateinit var btnUpdate: Button
     private lateinit var btnDelete: Button
+
+    private lateinit var btnBack: ImageView
 
     private  lateinit var firebaseAuth: FirebaseAuth
     var databaseReference :  DatabaseReference? = null
@@ -37,6 +37,8 @@ class EditProfile : AppCompatActivity() {
         btnUpdate = findViewById(R.id.btnUpdateEP)
         btnDelete = findViewById(R.id.btnDeleteEP)
 
+        btnBack=findViewById<ImageView>(R.id.btnBackAP)
+
         firebaseAuth = FirebaseAuth.getInstance()
 
         database = FirebaseDatabase.getInstance()
@@ -51,6 +53,10 @@ class EditProfile : AppCompatActivity() {
                 etTel.text.toString(),
                 etNIC.text.toString()
             )
+        }
+
+        btnBack.setOnClickListener {
+            startActivity(Intent(this@EditProfile, UserActivity::class.java))
         }
 
 

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
 import com.example.fintrack.R
 import com.example.fintrack.models.FeedbackModel
@@ -15,6 +16,7 @@ class FeedbackActivity : AppCompatActivity() {
 
     private lateinit var etFeedback: EditText
     private lateinit var btnFeedback:Button
+    private lateinit var btnBack: ImageView
 
     private lateinit var dbRef: DatabaseReference
 
@@ -25,10 +27,16 @@ class FeedbackActivity : AppCompatActivity() {
         etFeedback = findViewById(R.id.editTextTextMultiLine)
         btnFeedback = findViewById(R.id.btnAddAP)
 
+        btnBack=findViewById<ImageView>(R.id.btnBackAP)
+
         dbRef = FirebaseDatabase.getInstance().getReference("Feedback")
 
         btnFeedback.setOnClickListener {
             saveFeedbackData()
+        }
+
+        btnBack.setOnClickListener {
+            startActivity(Intent(this@FeedbackActivity, UserActivity::class.java))
         }
     }
     private fun saveFeedbackData(){

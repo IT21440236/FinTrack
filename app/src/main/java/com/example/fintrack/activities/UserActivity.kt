@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.TextView
 import com.example.fintrack.R
 import com.google.firebase.auth.FirebaseAuth
@@ -19,6 +20,9 @@ class UserActivity : AppCompatActivity() {
     private lateinit var tvAnalytics:TextView
     private lateinit var btnEdit: Button
 
+    private lateinit var btnUser: ImageButton
+    private lateinit var btnWallet: ImageButton
+
     private  lateinit var firebaseAuth: FirebaseAuth
     var databaseReference :  DatabaseReference? = null
     var database: FirebaseDatabase? = null
@@ -33,6 +37,9 @@ class UserActivity : AppCompatActivity() {
         tvFeedback = findViewById(R.id.textView6)
         tvContactus = findViewById(R.id.textView11)
         btnEdit = findViewById(R.id.btnEditUP)
+
+        btnUser=findViewById<ImageButton>(R.id.btnUserUP)
+        btnWallet=findViewById<ImageButton>(R.id.btnWalletUP)
 
         tvAnalytics = findViewById(R.id.textView5)
 
@@ -62,6 +69,14 @@ class UserActivity : AppCompatActivity() {
         btnEdit.setOnClickListener {
             startActivity(Intent(this@UserActivity, EditProfile::class.java))
             finish()
+        }
+
+        btnUser.setOnClickListener {
+            startActivity(Intent(this@UserActivity, UserActivity::class.java))
+        }
+
+        btnWallet.setOnClickListener {
+            startActivity(Intent(this@UserActivity, WalletActivity::class.java))
         }
 
 

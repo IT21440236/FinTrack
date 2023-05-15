@@ -1,9 +1,11 @@
 package com.example.fintrack.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
 import com.example.fintrack.R
 import com.example.fintrack.models.GoalModel
@@ -17,6 +19,8 @@ class AddgoalActivity : AppCompatActivity() {
     private lateinit var etAmount: EditText
     private lateinit var btnGoalAdd: Button
 
+    private lateinit var btnBack: ImageView
+
     private lateinit var dbRef: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,10 +32,16 @@ class AddgoalActivity : AppCompatActivity() {
         etAmount = findViewById(R.id.etAmountAP)
         btnGoalAdd = findViewById(R.id.btnAddAP)
 
+        btnBack=findViewById<ImageView>(R.id.btnBackAP)
+
         dbRef = FirebaseDatabase.getInstance().getReference("Goal")
 
         btnGoalAdd.setOnClickListener {
             saveGoalData()
+        }
+
+        btnBack.setOnClickListener {
+            startActivity(Intent(this@AddgoalActivity, GoalActivity::class.java))
         }
     }
 

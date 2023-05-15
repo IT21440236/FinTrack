@@ -15,13 +15,19 @@ class GoalAdapter(private var goalList:ArrayList<GoalModel>) : RecyclerView.Adap
         fun onItemClick(position: Int)
     }
 
-    fun setFilteredList(mList : ArrayList<GoalModel>){
-        this.goalList = mList
-        notifyDataSetChanged()
-    }
+//    fun setFilteredList(mList : ArrayList<GoalModel>){
+//        this.goalList = mList
+//        notifyDataSetChanged()
+//    }
 
     fun setOnClickListner(clickListner: onItemClickListner){
         mListner = clickListner
+    }
+
+    fun submitList(list: List<GoalModel>){
+        goalList.clear()
+        goalList.addAll(list)
+        notifyDataSetChanged()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
